@@ -7,81 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI TECHNOLOGIES</title>
   <link rel="shortcut icon" href="./assest/img/favicon.png" type="image/x-icon">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assest/css/home-hero-style.css">
-
-  <style>
-   /* Container for custom nav */
-/* .owl-nav {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-} */
-
-.owl-theme .owl-nav {
-    margin-top: 30px;
-}
-
-/* Style for Previous button */
-.owl-nav .owl-prev {
-  position: relative;
-  background-color: #081346 !important; /* Ensure this color is applied */
-  height: 40px;
-  width: 40px;
-  color: white !important;
-  border-radius: 50% !important;
-  padding: 10px 15px !important;
-  border: none !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-  cursor: pointer !important;
-  transition: background-color 0.3s ease !important;
-}
-
-.owl-nav .owl-prev span {
-  position: absolute;
-  top: 7%;
-  right: 40%;
-}
-
-/* Style for Next button */
-.owl-nav .owl-next {
-  position: relative;
-  background-color: #081346 !important; /* Ensure this color is applied */
-  height: 40px;
-  width: 40px;
-  color: white !important;
-  border-radius: 50% !important;
-  padding: 10px 15px !important;
-  border: none !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-  cursor: pointer !important;
-  transition: background-color 0.3s ease !important;
-}
-
-.owl-nav .owl-next span {
-  position: absolute;
-  top: 7%;
-  right: 40%;
-}
-
-
-/* Hover effects */
-.owl-nav .owl-prev:hover,
-.owl-nav .owl-next:hover {
-  background-color: #003365 !important;
-}
-
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="./assest/css/home-style.css">
 
 </head>
 
@@ -458,7 +391,7 @@
     </section>
 
     <section id="about">
-      <div class="container-fluid lg:grid lg:grid-cols-2 mx-auto lg:max-h-screen">
+      <div class="container-fluid lg:grid lg:grid-cols-2 mx-auto lg:max-h-fit">
         <div class="flex flex-col justify-center items-center bg-[#000a13] pt-16 pb-10 space-y-12 px-4 md:space-y-0">
           <h4 class="md:pb-8 text-xl text-white font-semibold">Digital Marketing Agency</h4>
           <h2
@@ -477,11 +410,11 @@
         </div>
 
         <div
-          class="flex flex-col lg:justify-center items-center bg-[#003365] pt-16 pb-10 space-y-12 px-4 md:space-y-0 h-screen">
+          class="flex flex-col lg:justify-center items-center bg-[#003365] pt-16 pb-10 space-y-12 px-4 md:space-y-0 h-fit">
           <h4 class="md:pb-8 text-xl text-white font-semibold">Featured Accolades</h4>
           <h2 class="max-w-md text-3xl text-white font-semibold text-center">We have won 4 of the top 5 web awards in
             the world</h2>
-          <img class="h-2/3" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/awards-800x600-v1-1.webp"
+          <img class="h-3/5 md:h-2/3" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/awards-800x600-v1-1.webp"
             alt="">
           <!-- <p class="max-w-xl text-center sm:pb-10 text-gray-200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum ea praesentium magni, repudiandae natus ratione, neque voluptas facilis explicabo odit perspiciatis aliquam aspernatur obcaecati in laudantium impedit asperiores labore.
@@ -812,10 +745,10 @@
 
     <!--  -->
     <section id="ourWork">
-      <div class="container-fliud bg-white mx-auto pt-16 pb-10 px-4">
+      <div class="container-fliud bg-white mx-auto pt-16 pb-8 px-4">
         <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Our Work</h2>
         <h4 class="text-center text-xl text-gray-900 font-medium">Bespoke solutions for unique challenges</h4>
-        <div class="owl-carousel owl-theme my-12">
+        <div class="our-work owl-carousel owl-theme my-12">
           <div class="item">
             <div class= "work-content-box md:relative md:flex md:items-center md:overflow-hidden">
               <div class="relative flex items-center overflow-hidden">
@@ -884,7 +817,7 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block text-sm font-semibold pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
@@ -956,7 +889,7 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block text-sm font-semibold pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
@@ -1028,13 +961,325 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block text-sm font-semibold pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--  -->
+
+    <!--  -->
+    <!-- <section id="ourBlog">
+      <div class="container-fliud bg-white mx-auto pt-16 pb-10 px-0">
+        <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Blog</h2>
+        <h4 class="text-center text-xl text-gray-900 font-medium">Catch up on our latest and greatest!</h4>
+        <a href="#" class="block text-sm font-semibold py-4 text-center uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+        <div class="my-10 flex">
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex-col">
+              <div class="w-96">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="pr-5 mb-3">
+                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex-col">
+              <div class="w-96">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="pr-5 mb-3">
+                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex-col">
+              <div class="w-96">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="pr-5 mb-3">
+                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex-col">
+              <div class="w-96">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="pr-5 mb-3">
+                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--  -->
+
+    <!--  -->
+    <section id="ourBlog">
+      <div class="container-fliud bg-white mx-auto py-8 px-0">
+        <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Blog</h2>
+        <h4 class="text-center text-xl text-gray-900 font-medium">Catch up on our latest and greatest!</h4>
+        <a href="#" class="block text-sm font-semibold py-4 text-center uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+        <div class="our-blog owl-carousel owl-theme my-10 flex">
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex flex-col">
+              <div class="w-fit">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="my-2">
+                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex flex-col">
+              <div class="w-fit">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="my-2">
+                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex flex-col">
+              <div class="w-fit">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="my-2">
+                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+          <div class="item border-l-[1px] border-gray-300">
+            <div class="p-0 m-0 flex flex-col">
+              <div class="w-fit">
+                <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
+              </div>
+              <div class="my-8 mx-12">
+                <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
+              </div>
+              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
+              <div class="my-4 mx-12">
+                <p class="text-sm">Announcements  •  News  •  Tech</p>
+              </div>
+              <div class="my-2">
+                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section id="ourContact">
+      <div class="container-fliud bg-white mx-auto pt-8 px-0 flex flex-col md:flex-row h-fit md:h-[25rem]">
+        <div class="bg-[#ffef3c] text-center md:text-left md:basis-4/5 py-14 px-12 lg:px-32 flex flex-col justify-around">
+          <div class="my-2 md:my-0">
+            <h2 class="text-4xl lg:text-5xl font-semibold">Have a project you like to discus?</h2>
+          </div>
+          <div class="my-2 md:my-0">
+            <a class="text-sm" href="mailto:">sales@aitech.lk</a>
+          </div>
+          <div class="my-2 md:my-0">
+            <a class="bg-white inline-block py-5 px-8" href="#">Let's Chat</a>
+          </div>
+        </div>
+
+        <div class="bg-white md:basis-3/5 mt-6 md:mt-0 flex flex-col justify-center items-center lg:items-start">
+          <div class="w-fit px-16 pb-8 flex flex-col justify-center">
+            <h2 class="text-4xl lg:text-5xl text-gray-300 font-semibold">Sri Lanka</h2>
+            <a href="tel:" class="text-sm text-center text-gray-700">+94 774 123 480</a>
+          </div>
+          <!-- <div class="bg-gray-300 w-[100%] md:w-[50%] h-px my-1"></div> -->
+          <div class="w-fit px-16 pb-8 flex flex-col justify-center border-t-[1px] border-gray-300">
+            <h2 class="text-4xl lg:text-5xl text-gray-300 font-semibold">Sri Lanka</h2>
+            <a href="tel:" class="text-sm text-center text-gray-700">+94 774 123 480</a>
+          </div>
+          <!-- <div class="bg-gray-300 w-[100%] md:w-[50%] h-px my-1"></div> -->
+          <div class="w-fit px-16 pb-8 flex flex-col justify-center border-t-[1px] border-gray-300">
+            <h2 class="text-4xl lg:text-5xl text-gray-300 font-semibold">Sri Lanka</h2>
+            <a href="tel:" class="text-sm text-center text-gray-700">+94 774 123 480</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <footer class="bg-[#000a13] text-gray-400">
+      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-80 md:w-64 flex-shrink-0 mb-8 md:mb-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
+              <img class="w-40 mr-2" src="./assest/img/logo.png" alt="">
+            </a>
+          <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus odio magnam, fuga in ipsa cumque dolore ad modi, illum sequi ex, hic reprehenderit vitae rem provident sed inventore recusandae quia.</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 md-10 md:text-left text-center">
+
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
+            <nav class="list-none mb-10">
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+            </nav>
+          </div>
+
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
+            <nav class="list-none mb-10">
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+            </nav>
+          </div>
+
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
+            <nav class="list-none mb-10">
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+            </nav>
+          </div>
+
+          <!-- <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+            <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+              <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                <label class="leading-7 text-sm text-gray-400" for="">Enter Email</label>
+                <input class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" type="text">
+              </div>
+            </div>
+            <p class="text-gray-500 text-sm md:text-left text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, omnis. Molestiae, aut magni <br>brand in Sri Lanka.</p>
+          </div> -->
+
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
+            <nav class="list-none mb-10">
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+              </li>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-800 bg-opacity-75">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+          <p class="text-gray-400 text-sm text-center sm:text-left">2024 Project with - <a href="" class="text-gray-500 ml-1">AITECH</a></p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-0 justify-center sm:justify-center">
+            <a href="" class="text-gray-400 ml-3">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="" class="text-gray-400 ml-3">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="" class="text-gray-400 ml-3">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="" class="text-gray-400 ml-3">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
     <!--  -->
 
   </main>
@@ -1045,32 +1290,9 @@
   <script src="./assest/js/homeFeatureResponsiveSlide.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-<script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    dots:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:2
-        }
-    }
-})
-</script>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./assest/js/homeOwlCarousel.js"></script>
 
 </body>
 

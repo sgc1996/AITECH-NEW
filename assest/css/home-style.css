@@ -17,6 +17,7 @@ body {
     background-color: #0b372dbb;
 }
 
+/* Navigation and hero section */
 .logo {
     width: 200px;
 }
@@ -59,51 +60,6 @@ header .main-nav a {
     font-size: 1.05rem;
     padding: 0 3rem;
 }
-
-/* .hamburger {
-    padding-left: 1.5rem;
-}
-
-.hamburger a {
-    padding: 0;
-    width: 37px;
-    height: 37px;
-    display: flex;
-    border-radius: 50%;
-    background-color: rgba(115, 115, 115, 0);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .hamburger .bar {
-    position: relative;
-    width: 52%;
-    height: 1.3px;
-    background-color: #fff;
-    border-radius: 2px;
-}
-
-.hamburger .bar::before,
-.hamburger .bar::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 100%;
-    background-color: inherit;
-    border-radius: 2px;
-}
-
-.hamburger .bar::before {
-    top: -4.5px;
-}
-
-.hamburger .bar::after {
-    top: 4.5px;
-} */
 
 #hero-section {
     /* background-color: #353; */
@@ -469,24 +425,6 @@ header .main-nav a {
         /* height: 59.44%; */
     }
     
-    /* .sun-rays {
-        position: absolute;
-        z-index: 19;
-        top: 0;
-        right: 0;
-        width: 41.32%;
-        pointer-events: none;
-    }
-    
-    .black-shadow {
-        position: absolute;
-        z-index: 20;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        pointer-events: none;
-    } */
-    
     .fog-1 {
         width: 15%;
         top: 29.26%;
@@ -505,113 +443,58 @@ header .main-nav a {
     }
 }
 
+/* Our work arrows */
+.owl-theme .owl-nav {
+    margin-top: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#cCarousel {
+/* Style for Previous button */
+.owl-nav .owl-prev {
   position: relative;
-  max-width: 900px;
-  margin: auto;
+  background-color: #081346 !important; /* Ensure this color is applied */
+  height: 40px;
+  width: 40px;
+  color: white !important;
+  border-radius: 50% !important;
+  padding: 10px 15px !important;
+  border: none !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
 }
 
-#cCarousel .arrow {
+.owl-nav .owl-prev span {
   position: absolute;
-  top: 50%;
-  display: flex;
-  width: 45px;
-  height: 45px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  z-index: 1;
-  font-size: 26px;
-  color: white;
-  background: #00000072;
-  cursor: pointer;
+  top: 7%;
+  right: 40%;
 }
 
-#cCarousel #prev {
-  left: 0px;
-}
-
-#cCarousel #next {
-  right: 0px;
-}
-
-#carousel-vp {
-  width: 770px;
-  height: 400px;
-  display: flex;
-  align-items: center;
+/* Style for Next button */
+.owl-nav .owl-next {
   position: relative;
-  overflow: hidden;
-  margin: auto;
+  background-color: #081346 !important; /* Ensure this color is applied */
+  height: 40px;
+  width: 40px;
+  color: white !important;
+  border-radius: 50% !important;
+  padding: 10px 15px !important;
+  border: none !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
 }
 
-@media (max-width: 770px) {
-  #carousel-vp {
-    width: 510px;
-  }
-}
-
-@media (max-width: 510px) {
-  #carousel-vp {
-    width: 250px;
-  }
-}
-
-#cCarousel #cCarousel-inner {
-  display: flex;
+.owl-nav .owl-next span {
   position: absolute;
-  transition: 0.3s ease-in-out;
-  gap: 10px;
-  left: 0px;
+  top: 7%;
+  right: 40%;
 }
 
-.cCarousel-item {
-  width: 250px;
-  height: 365px;
-  border: 2px solid white;
-  border-radius: 15px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
 
-.cCarousel-item img {
-  width: 100%;
-  object-fit: cover;
-  min-height: 246px;
-  color: white;
-}
-
-.cCarousel-item .infos {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background: white;
-  color: black;
-}
-
-.cCarousel-item .infos button {
-  background: #222;
-  padding: 10px 30px;
-  border-radius: 15px;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
+/* Hover effects */
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  background-color: #003365 !important;
 }
