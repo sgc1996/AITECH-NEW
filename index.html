@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
   <link rel="stylesheet" href="./assest/css/home-style.css">
+  <link rel="stylesheet" href="./assest/css/loading-style.css">
 
 </head>
 
@@ -32,7 +33,7 @@
         </li> -->
         <li class="hamburger">
           <a href="#">
-            <ion-icon name="menu-outline" class="text-5xl mt-2" onclick="Menu(this)"></ion-icon>
+            <ion-icon name="menu-outline" class="mt-2 text-5xl" onclick="Menu(this)"></ion-icon>
           </a>
         </li>
       </ul>
@@ -44,7 +45,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Digital</a>
-            <span class="lg:hidden block text-4xl text-gray-400">
+            <span class="block text-4xl text-gray-400 lg:hidden">
               <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle1')"></ion-icon>
             </span>
           </div>
@@ -96,7 +97,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Web</a>
-            <span class="lg:hidden block text-4xl text-gray-400">
+            <span class="block text-4xl text-gray-400 lg:hidden">
               <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle2')"></ion-icon>
             </span>
           </div>
@@ -127,7 +128,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Development</a>
-            <span class="lg:hidden block text-4xl text-gray-400">
+            <span class="block text-4xl text-gray-400 lg:hidden">
               <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle3')"></ion-icon>
             </span>
           </div>
@@ -146,7 +147,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Studio</a>
-            <span class="lg:hidden block text-4xl text-gray-400">
+            <span class="block text-4xl text-gray-400 lg:hidden">
               <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle4')"></ion-icon>
             </span>
           </div>
@@ -165,7 +166,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Events</a>
-            <span class="lg:hidden block text-4xl text-gray-400">
+            <span class="block text-4xl text-gray-400 lg:hidden">
               <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle5')"></ion-icon>
             </span>
           </div>
@@ -196,7 +197,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Industries</a>
-            <span class="lg:hidden block text-4xl text-gray-400">
+            <span class="block text-4xl text-gray-400 lg:hidden">
               <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle6')"></ion-icon>
             </span>
           </div>
@@ -228,7 +229,7 @@
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">About
               Us</a>
-            <!-- <span class="lg:hidden block text-4xl text-gray-400">
+            <!-- <span class="block text-4xl text-gray-400 lg:hidden">
                 <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle7')"></ion-icon>
               </span> -->
           </div>
@@ -256,7 +257,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Blog</a>
-            <span class="lg:hidden block text-4xl text-gray-400">
+            <span class="block text-4xl text-gray-400 lg:hidden">
               <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle8')"></ion-icon>
             </span>
           </div>
@@ -284,7 +285,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#173c72] duration-500">Contact</a>
-            <!-- <span class="lg:hidden block text-4xl text-gray-400">
+            <!-- <span class="block text-4xl text-gray-400 lg:hidden">
                 <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle9')"></ion-icon>
               </span> -->
           </div>
@@ -312,7 +313,7 @@
           <div class="flex justify-between">
             <a href="#"
               class="lg:text-4xl sm:text-4xl text-2xl font-medium uppercase text-white hover:text-[#173c72] duration-500">Careers</a>
-            <!-- <span class="lg:hidden block text-4xl text-gray-400">
+            <!-- <span class="block text-4xl text-gray-400 lg:hidden">
                 <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle10')"></ion-icon>
               </span> -->
           </div>
@@ -341,6 +342,22 @@
   </header>
 
   <main>
+
+    <div class="loading-page" id="preloader">
+
+      <svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" width="422" height="70">
+          <path d="M0 0 C0.93328125 -0.03738281 1.8665625 -0.07476562 2.828125 -0.11328125 C7.94003259 0.63163577 10.88026919 3.30014452 14.1796875 7.140625 C15.00654301 8.27276022 15.82090634 9.41408649 16.625 10.5625 C17.08060303 11.19728271 17.53620605 11.83206543 18.00561523 12.48608398 C23.13414118 19.70891989 27.99693377 27.11728208 32.88256836 34.50537109 C37.45542709 41.41329494 42.14876109 48.20362123 47.02734375 54.8984375 C48.75 57.3125 48.75 57.3125 49.75 59.3125 C50.08 40.1725 50.41 21.0325 50.75 1.3125 C57.68 1.3125 64.61 1.3125 71.75 1.3125 C71.75 22.1025 71.75 42.8925 71.75 64.3125 C41.06 64.3125 10.37 64.3125 -21.25 64.3125 C-19.42937765 59.76094412 -17.63117088 56.89919463 -14.6875 53.0625 C-14.27564453 52.52109375 -13.86378906 51.9796875 -13.43945312 51.421875 C-10.46552579 47.52802579 -10.46552579 47.52802579 -9.25 46.3125 C-7.54436222 46.15509395 -5.83272756 46.06156608 -4.12109375 45.99609375 C-3.08662109 45.95419922 -2.05214844 45.91230469 -0.98632812 45.86914062 C0.10228516 45.82982422 1.19089844 45.79050781 2.3125 45.75 C3.9512207 45.68522461 3.9512207 45.68522461 5.62304688 45.61914062 C8.33189564 45.51267932 11.04083992 45.41066484 13.75 45.3125 C11.82935112 42.30139237 9.88581846 39.30576435 7.9375 36.3125 C7.39029297 35.45398437 6.84308594 34.59546875 6.27929688 33.7109375 C5.74755859 32.89882813 5.21582031 32.08671875 4.66796875 31.25 C4.18094482 30.49589844 3.6939209 29.74179687 3.19213867 28.96484375 C2.47828003 28.14693359 2.47828003 28.14693359 1.75 27.3125 C0.76 27.3125 -0.23 27.3125 -1.25 27.3125 C-2.78746175 28.91374337 -2.78746175 28.91374337 -4.18359375 31.08984375 C-4.74280518 31.90614258 -5.3020166 32.72244141 -5.87817383 33.56347656 C-6.47525146 34.4500293 -7.0723291 35.33658203 -7.6875 36.25 C-8.31873779 37.14557617 -8.94997559 38.04115234 -9.6003418 38.96386719 C-12.66669047 43.33962127 -15.51340521 47.6728854 -17.9609375 52.42578125 C-22.94848075 61.60180547 -22.94848075 61.60180547 -27.25 64.3125 C-35.4278364 66.29390222 -43.98599395 65.37186504 -52.25 64.3125 C-50.32737346 60.31889275 -47.89965733 56.7566462 -45.375 53.125 C-44.8895874 52.4230249 -44.4041748 51.7210498 -43.90405273 50.99780273 C-39.41027565 44.5128659 -34.8659822 38.0637008 -30.30078125 31.62890625 C-28.21780421 28.69048064 -26.15513169 25.73909718 -24.10546875 22.77734375 C-8.44809478 0.21928115 -8.44809478 0.21928115 0 0 Z M-10.3828125 7.6328125 C-11.04023437 8.55835938 -11.69765625 9.48390625 -12.375 10.4375 C-13.52935547 12.04431641 -13.52935547 12.04431641 -14.70703125 13.68359375 C-15.55517322 14.89288865 -16.40280613 16.1025407 -17.25 17.3125 C-18.19059472 18.63729531 -19.13203135 19.96149318 -20.07421875 21.28515625 C-22.10029868 24.13818711 -24.11621565 26.99804833 -26.125 29.86328125 C-28.2178241 32.84805331 -30.32216357 35.82410963 -32.4375 38.79296875 C-37.92776396 46.50740626 -43.29697906 54.23768065 -48.25 62.3125 C-45.22425372 62.55734061 -42.21841709 62.73428683 -39.1875 62.875 C-37.91616211 62.98811523 -37.91616211 62.98811523 -36.61914062 63.10351562 C-32.83651863 63.23495809 -30.29280522 63.21110031 -27.3503418 60.67553711 C-25.48012926 58.30660123 -23.86416828 55.86265131 -22.25 53.3125 C-20.9308999 51.43259582 -19.60648633 49.5564111 -18.27734375 47.68359375 C-16.91149561 45.7075009 -15.54824117 43.72961298 -14.1875 41.75 C-1.09314456 22.73407228 -1.09314456 22.73407228 1.75 21.3125 C1.95882812 21.96347656 2.16765625 22.61445313 2.3828125 23.28515625 C4.28259103 27.49180871 6.92382002 31.02211252 9.625 34.75 C10.68560136 36.22735834 11.74551048 37.70521391 12.8046875 39.18359375 C13.30709961 39.88339355 13.80951172 40.58319336 14.32714844 41.30419922 C16.19277007 43.93745308 17.97976207 46.61438374 19.75 49.3125 C18.91339844 49.2496582 18.07679687 49.18681641 17.21484375 49.12207031 C14.07671773 48.91616337 10.94204691 48.76655826 7.79931641 48.65332031 C5.78444802 48.56402665 3.77270498 48.41144318 1.76171875 48.2578125 C-2.23959494 48.13716988 -5.40044921 48.1887872 -9.25 49.3125 C-12.8594725 52.87795454 -15.16176802 56.70738139 -17.25 61.3125 C-17.25 61.6425 -17.25 61.9725 -17.25 62.3125 C4.53 62.3125 26.31 62.3125 48.75 62.3125 C44.32136536 55.35321699 39.88623818 48.52854709 35.125 41.8125 C29.71868244 34.14106763 24.37984427 26.42771198 19.10107422 18.66796875 C17.65574869 16.5459787 16.2040476 14.4285199 14.75 12.3125 C14.06852905 11.30908569 14.06852905 11.30908569 13.37329102 10.28540039 C10.5430878 6.19428339 8.52405452 3.96880463 3.75 2.3125 C-2.07301372 1.58462329 -6.39961335 3.299442 -10.3828125 7.6328125 Z M52.75 3.3125 C52.75 22.7825 52.75 42.2525 52.75 62.3125 C58.36 62.3125 63.97 62.3125 69.75 62.3125 C69.75 42.8425 69.75 23.3725 69.75 3.3125 C64.14 3.3125 58.53 3.3125 52.75 3.3125 Z " fill="#231F20" transform="translate(53.25,2.6875)"/>
+          <path d="M0 0 C21.12 0 42.24 0 64 0 C56.61276296 14.77447409 56.61276296 14.77447409 51.12371826 16.63647461 C45.90713531 17.4985654 40.68613311 17.09574114 35.4375 16.75 C33.84069638 16.68971268 32.24367302 16.63497614 30.64648438 16.5859375 C26.75883576 16.45458323 22.88186824 16.24820536 19 16 C19 17.32 19 18.64 19 20 C32.86 20 46.72 20 61 20 C59.38586819 23.22826362 57.83844746 25.77296768 55.6875 28.625 C54.82705078 29.78902344 54.82705078 29.78902344 53.94921875 30.9765625 C50.94986839 34.09011658 48.14808295 34.91692857 43.86206055 35.22705078 C42.71519775 35.21657715 41.56833496 35.20610352 40.38671875 35.1953125 C39.13955078 35.18886719 37.89238281 35.18242188 36.60742188 35.17578125 C34.66706055 35.15064453 34.66706055 35.15064453 32.6875 35.125 C31.37458984 35.11597656 30.06167969 35.10695312 28.70898438 35.09765625 C25.47247087 35.07411797 22.23632851 35.0412352 19 35 C19 36.32 19 37.64 19 39 C33.85 39 48.7 39 64 39 C63.34 40.32 62.68 41.64 62 43 C61.59982666 43.98645508 61.19965332 44.97291016 60.78735352 45.98925781 C58.69005857 49.90595389 56.91319279 52.76686437 53 55 C44.27046812 57.09224663 34.80720288 56.11088808 25.9375 55.75 C17.378125 55.5025 8.81875 55.255 0 55 C0 36.85 0 18.7 0 0 Z M2 3 C2 19.5 2 36 2 53 C9.899375 53.226875 17.79875 53.45375 25.9375 53.6875 C28.4137085 53.78764404 30.88991699 53.88778809 33.44116211 53.9909668 C44.67132327 54.76115018 44.67132327 54.76115018 54.57470703 50.53759766 C58.34566094 46.27598427 58.34566094 46.27598427 60 41 C45.48 41 30.96 41 16 41 C16 38.03 16 35.06 16 32 C17.40693115 32.03927612 17.40693115 32.03927612 18.84228516 32.0793457 C22.342443 32.16486855 25.84148142 32.22739092 29.34228516 32.2746582 C30.85353174 32.29971095 32.36465824 32.33376377 33.87548828 32.37719727 C36.05531501 32.4382669 38.23353262 32.46629916 40.4140625 32.48828125 C41.7232666 32.51446533 43.0324707 32.54064941 44.38134766 32.56762695 C48.96151835 31.84917486 50.79062183 30.29052225 54 27 C54.99 25.35 55.98 23.7 57 22 C43.47 22 29.94 22 16 22 C16 19.36 16 16.72 16 14 C17.01835937 14.05236816 18.03671875 14.10473633 19.0859375 14.15869141 C22.89443724 14.34083062 26.70256113 14.45487639 30.51416016 14.54931641 C32.15772379 14.59935616 33.80084773 14.66741948 35.44287109 14.75439453 C45.25445505 15.5259349 45.25445505 15.5259349 53.91015625 11.76464844 C57.39958643 7.82240724 57.39958643 7.82240724 59 3 C40.19 3 21.38 3 2 3 Z " fill="#231F20" transform="translate(215,8)"/>
+          <path d="M0 0 C6.27 0 12.54 0 19 0 C19 5.94 19 11.88 19 18 C28.57 18 38.14 18 48 18 C48 12.06 48 6.12 48 0 C53.94 0 59.88 0 66 0 C66 18.15 66 36.3 66 55 C60.06 55 54.12 55 48 55 C46.92834722 50.71338888 47.10485507 47.08443773 47.4375 42.75 C47.7159375 38.91375 47.7159375 38.91375 48 35 C38.43 35 28.86 35 19 35 C19 41.6 19 48.2 19 55 C12.73 55 6.46 55 0 55 C0 36.85 0 18.7 0 0 Z M50 2 C50 8.27 50 14.54 50 21 C38.78 21 27.56 21 16 21 C16.495 12.09 16.495 12.09 17 3 C12.38 3 7.76 3 3 3 C3 19.17 3 35.34 3 52 C7.62 52 12.24 52 17 52 C17 45.73 17 39.46 17 33 C27.89 33 38.78 33 50 33 C50 39.6 50 46.2 50 53 C54.62 53 59.24 53 64 53 C64 36.17 64 19.34 64 2 C59.38 2 54.76 2 50 2 Z " fill="#231F20" transform="translate(354,8)"/>
+          <path d="M0 0 C1.5747686 0.00848969 1.5747686 0.00848969 3.18135071 0.01715088 C6.49248356 0.03931286 9.80248259 0.08947062 13.11328125 0.140625 C15.37563527 0.16071609 17.63800647 0.17896225 19.90039062 0.1953125 C25.40923266 0.23911096 30.91742592 0.30581672 36.42578125 0.390625 C36.42578125 1.050625 36.42578125 1.710625 36.42578125 2.390625 C35.76578125 2.390625 35.10578125 2.390625 34.42578125 2.390625 C34.16410156 2.95523437 33.90242188 3.51984375 33.6328125 4.1015625 C32.31571992 6.59934972 30.81339644 8.76137026 29.11328125 11.015625 C28.53964844 11.79164062 27.96601563 12.56765625 27.375 13.3671875 C24.55646236 16.2930442 21.82343379 17.28737243 17.78198242 17.5859375 C16.38943237 17.55113281 16.38943237 17.55113281 14.96875 17.515625 C13.93814453 17.50015625 12.90753906 17.4846875 11.84570312 17.46875 C9.7024671 17.41694973 7.55923782 17.36486951 5.41601562 17.3125 C-5.04885255 16.99024191 -5.04885255 16.99024191 -14.07421875 21.578125 C-16.00254536 25.19373739 -16.15249211 27.34271146 -15.57421875 31.390625 C-13.73716424 34.57014242 -12.39709666 36.02597466 -9.03662109 37.51513672 C-4.55538965 38.64824178 -0.40280609 38.63945002 4.19921875 38.5859375 C5.58483505 38.58169266 5.58483505 38.58169266 6.9984436 38.57736206 C9.93269101 38.56621679 12.86662695 38.54112265 15.80078125 38.515625 C17.79687057 38.50558789 19.79296471 38.49646332 21.7890625 38.48828125 C26.66808774 38.46629597 31.54688179 38.43180517 36.42578125 38.390625 C36.42578125 39.380625 36.42578125 40.370625 36.42578125 41.390625 C35.76578125 41.390625 35.10578125 41.390625 34.42578125 41.390625 C34.16925781 41.95394531 33.91273438 42.51726563 33.6484375 43.09765625 C32.28094158 45.66225723 30.66662017 47.80042135 28.86328125 50.078125 C28.24324219 50.86574219 27.62320313 51.65335938 26.984375 52.46484375 C25.42578125 54.390625 25.42578125 54.390625 24.42578125 55.390625 C21.8763605 55.52906632 19.35606526 55.60380804 16.8046875 55.62890625 C15.6437986 55.64101387 15.6437986 55.64101387 14.4594574 55.65336609 C12.81259412 55.66723273 11.16570179 55.67794328 9.51879883 55.68579102 C7.0295293 55.70284245 4.54164502 55.74668136 2.05273438 55.79101562 C-9.78360554 55.90803369 -18.8535378 54.7466897 -27.81640625 46.328125 C-33.85702014 39.67002614 -36.01812298 33.53339519 -35.91015625 24.59375 C-35.18129039 17.64409878 -31.91311843 12.3263179 -26.94921875 7.515625 C-18.82343736 1.22160307 -10.03700119 -0.2086409 0 0 Z M-27.57421875 11.390625 C-32.08056572 16.82135084 -33.89023213 22.30418022 -33.44921875 29.328125 C-32.35038527 37.47677776 -29.08248179 42.75408907 -22.70703125 47.91796875 C-13.27628755 54.42967273 -1.19132636 53.57133136 9.80078125 53.578125 C11.39986328 53.59649414 11.39986328 53.59649414 13.03125 53.61523438 C14.05605469 53.61716797 15.08085937 53.61910156 16.13671875 53.62109375 C17.51802979 53.62725708 17.51802979 53.62725708 18.92724609 53.63354492 C22.57837022 53.27856461 24.67405017 52.21821885 27.12890625 49.515625 C27.639375 48.814375 28.14984375 48.113125 28.67578125 47.390625 C29.1965625 46.689375 29.71734375 45.988125 30.25390625 45.265625 C31.60244756 43.47647379 31.60244756 43.47647379 31.42578125 41.390625 C30.2454834 41.37604248 29.06518555 41.36145996 27.84912109 41.34643555 C23.4542875 41.28829803 19.05995799 41.21106619 14.66552734 41.12817383 C12.76652226 41.09499707 10.86742029 41.06694269 8.96826172 41.04418945 C6.2323289 41.01050982 3.49727814 40.9581878 0.76171875 40.90234375 C-0.50425644 40.89275887 -0.50425644 40.89275887 -1.79580688 40.88298035 C-7.58625008 40.73977662 -11.99058828 39.79607406 -16.38671875 35.703125 C-18.44235901 31.70003607 -19.31907748 27.73693001 -17.94921875 23.421875 C-15.66391379 18.9274419 -13.27796182 17.38730336 -8.57421875 15.390625 C-5.12670898 15.03759766 -5.12670898 15.03759766 -1.3828125 15.0546875 C-0.01236499 15.04218257 1.35807776 15.0291458 2.72851562 15.015625 C4.86369676 15.01169054 6.998408 15.01569415 9.13354492 15.03027344 C11.21212657 15.03886558 13.28877617 15.01714407 15.3671875 14.9921875 C17.21872437 14.99726318 17.21872437 14.99726318 19.10766602 15.00244141 C24.72332546 13.96698834 27.05386197 9.97138128 30.23828125 5.578125 C30.96015625 4.52625 31.68203125 3.474375 32.42578125 2.390625 C27.09133878 2.31570306 21.75721179 2.26166329 16.42236328 2.22583008 C14.6127386 2.21087051 12.80314935 2.19049543 10.99365234 2.16430664 C-9.69698717 1.84215877 -9.69698717 1.84215877 -27.57421875 11.390625 Z " fill="#231F20" transform="translate(315.57421875,7.609375)"/>
+          <path d="M0 0 C3.66632228 0.13408019 7.33381417 0.19258598 11.00189209 0.25787354 C18.17240677 0.3964379 25.33712631 0.61763632 32.50384521 0.89263916 C32.20470215 1.49044189 31.90555908 2.08824463 31.59735107 2.7041626 C30.7312934 4.43743811 29.86887298 6.17253098 29.00775146 7.90826416 C27.06634521 11.14263916 27.06634521 11.14263916 21.50384521 16.89263916 C15.23384521 16.89263916 8.96384521 16.89263916 2.50384521 16.89263916 C2.50384521 29.76263916 2.50384521 42.63263916 2.50384521 55.89263916 C-3.76615479 55.89263916 -10.03615479 55.89263916 -16.49615479 55.89263916 C-16.49615479 43.02263916 -16.49615479 30.15263916 -16.49615479 16.89263916 C-28.87115479 17.38763916 -28.87115479 17.38763916 -41.49615479 17.89263916 C-39.87134202 11.3933881 -37.21644516 6.33048345 -31.92724609 2.14611816 C-22.99736833 -2.45815739 -9.85128919 -0.39853683 0 0 Z M-31.49615479 5.89263916 C-33.47615479 8.86263916 -35.45615479 11.83263916 -37.49615479 14.89263916 C-29.57615479 14.89263916 -21.65615479 14.89263916 -13.49615479 14.89263916 C-13.49615479 27.43263916 -13.49615479 39.97263916 -13.49615479 52.89263916 C-8.87615479 52.89263916 -4.25615479 52.89263916 0.50384521 52.89263916 C0.50384521 40.35263916 0.50384521 27.81263916 0.50384521 14.89263916 C6.77384521 14.89263916 13.04384521 14.89263916 19.50384521 14.89263916 C24.84351152 9.80712803 24.84351152 9.80712803 28.50384521 3.89263916 C28.50384521 3.56263916 28.50384521 3.23263916 28.50384521 2.89263916 C20.76261693 2.81656945 13.02148506 2.76403082 5.27996826 2.72784424 C2.64646808 2.71275859 0.01299301 2.6922875 -2.62042236 2.6663208 C-6.40588582 2.62992897 -10.19101706 2.61291026 -13.97662354 2.59967041 C-15.15387497 2.58418655 -16.3311264 2.5687027 -17.54405212 2.55274963 C-18.64481583 2.55252304 -19.74557953 2.55229645 -20.87969971 2.55206299 C-21.84566574 2.54540115 -22.81163177 2.53873932 -23.80686951 2.53187561 C-27.25693633 2.99469685 -28.76604693 3.68471636 -31.49615479 5.89263916 Z " fill="#231F20" transform="translate(180.49615478515625,7.10736083984375)"/>
+      </svg>
+
+
+      <div class="name-container">
+          <div class="logo-name">AI TECHNOLOGIES</div>
+      </div>
+    </div>
 
     <section id="hero-section">
       <div class="vignette hide"></div>
@@ -391,45 +408,45 @@
     </section>
 
     <section id="about">
-      <div class="container-fluid lg:grid lg:grid-cols-2 mx-auto lg:max-h-fit">
+      <div class="mx-auto container-fluid lg:grid lg:grid-cols-2 lg:max-h-fit">
         <div class="flex flex-col justify-center items-center bg-[#000a13] pt-16 pb-10 space-y-12 px-4 md:space-y-0">
-          <h4 class="md:pb-8 text-xl text-white font-semibold">Digital Marketing Agency</h4>
+          <h4 class="text-xl font-semibold text-white md:pb-8">Digital Marketing Agency</h4>
           <h2
             class="max-w-md text-4xl md:text-5xl text-white font-semibold text-center leading-[3rem] md:leading-[3.5rem]">
             Helping Brands Achieve <span class="text-yellow-400">Success</span> Online</h2>
-          <p class="max-w-md font-medium text-center md:py-10 sm:pb-10 text-gray-200 md:text-center">
+          <p class="max-w-md font-medium text-center text-gray-200 md:py-10 sm:pb-10 md:text-center">
             Canada <span class="font-black"> . </span> Sri lanka
           </p>
-          <p class="max-w-md md:max-w-xl text-center sm:pb-10 text-gray-200">
+          <p class="max-w-md text-center text-gray-200 md:max-w-xl sm:pb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum ea praesentium magni, repudiandae natus
             ratione, neque voluptas facilis explicabo odit perspiciatis aliquam aspernatur obcaecati in laudantium
             impedit asperiores labore.
           </p>
-          <a href="#" class="uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-10">[read
+          <a href="#" class="tracking-wide text-gray-200 uppercase duration-500 hover:text-yellow-400 sm:mb-10">[read
             more]</a>
         </div>
 
         <div
           class="flex flex-col lg:justify-center items-center bg-[#003365] pt-16 pb-10 space-y-12 px-4 md:space-y-0 h-fit">
-          <h4 class="md:pb-8 text-xl text-white font-semibold">Featured Accolades</h4>
-          <h2 class="max-w-md text-3xl text-white font-semibold text-center">We have won 4 of the top 5 web awards in
+          <h4 class="text-xl font-semibold text-white md:pb-8">Featured Accolades</h4>
+          <h2 class="max-w-md text-3xl font-semibold text-center text-white">We have won 4 of the top 5 web awards in
             the world</h2>
           <img class="h-3/5 md:h-2/3" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/awards-800x600-v1-1.webp"
             alt="">
-          <!-- <p class="max-w-xl text-center sm:pb-10 text-gray-200">
+          <!-- <p class="max-w-xl text-center text-gray-200 sm:pb-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum ea praesentium magni, repudiandae natus ratione, neque voluptas facilis explicabo odit perspiciatis aliquam aspernatur obcaecati in laudantium impedit asperiores labore.
           </p>
-          <a href="#" class="uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-10">[read more]</a> -->
+          <a href="#" class="tracking-wide text-gray-200 uppercase duration-500 hover:text-yellow-400 sm:mb-10">[read more]</a> -->
         </div>
 
       </div>
     </section>
 
     <section id="clientArea">
-      <div class="container-fliud bg-white mx-auto pt-16 pb-10 px-4">
-        <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Meet Our Clients</h2>
-        <h4 class="text-center text-xl text-gray-900 font-medium">We have served over 300 brands</h4>
-        <div class="container m-auto py-8 grid grid-cols-2 lg:grid lg:grid-cols-4 items-center justify-items-center">
+      <div class="px-4 pt-16 pb-10 mx-auto bg-white container-fliud">
+        <h2 class="text-4xl font-semibold text-center text-gray-900 md:text-5xl">Meet Our Clients</h2>
+        <h4 class="text-xl font-medium text-center text-gray-900">We have served over 300 brands</h4>
+        <div class="container grid items-center grid-cols-2 py-8 m-auto lg:grid lg:grid-cols-4 justify-items-center">
           <img class="w-auto my-8 grayscale hover:grayscale-0" src="./assest/img/clients-logo/fluffy-cart.png" alt="">
           <img class="w-auto my-8 grayscale hover:grayscale-0" src="./assest/img/clients-logo/gamunu-travel.png" alt="">
           <img class="w-auto my-8 grayscale hover:grayscale-0" src="./assest/img/clients-logo/gt-leisure.png" alt="">
@@ -457,61 +474,61 @@
 
     <section id="featuredServices">
       <div class="container-fluid lg:grid lg:grid-cols-2 mx-auto lg:h-screen py-8 bg-[#000a13]">
-        <div class="flex flex-col justify-center items-center pt-8 pb-10 space-y-12 px-4 md:space-y-0">
-          <!-- <h4 class="md:pb-8 text-xl text-white font-semibold">Digital Marketing Agency</h4> -->
-          <img src="./assest/img/rotate.gif" alt="Image" class="mx-auto w-full sm:w-1/2 md:w-2/3">
+        <div class="flex flex-col items-center justify-center px-4 pt-8 pb-10 space-y-12 md:space-y-0">
+          <!-- <h4 class="text-xl font-semibold text-white md:pb-8">Digital Marketing Agency</h4> -->
+          <img src="./assest/img/rotate.gif" alt="Image" class="w-full mx-auto sm:w-1/2 md:w-2/3">
           <!-- https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif -->
           <h2
             class="lg:max-w-md lg:py-4 lg:text-5xl hidden lg:block lg:text-white lg:font-semibold lg:text-center lg:leading-[3rem] ">
             Featured Services</h2>
-          <!-- <p class="max-w-md font-medium text-center md:py-10 sm:pb-10 text-gray-200 md:text-center">
+          <!-- <p class="max-w-md font-medium text-center text-gray-200 md:py-10 sm:pb-10 md:text-center">
             Canada <span class="font-black"> . </span> Sri lanka
           </p> -->
         </div>
 
         <div class="relative overflow-hidden">
           <div id="slider" class="flex transition-transform duration-500 ease-in-out lg:grid lg:grid-cols-2 lg:gap-4">
-            <div id="contentBox1" class="min-w-full justify-between p-4 text-center lg:text-left">
-              <h4 class="text-l md:text-xl text-white font-medium">01</h4>
-              <h4 class="text-3xl text-white font-semibold">Web Design</h4>
-              <p class="block text-xl md:text-base lg:max-w-md font-medium md:py-4 text-gray-200 mt-4">Lorem ipsum dolor
+            <div id="contentBox1" class="justify-between min-w-full p-4 text-center lg:text-left">
+              <h4 class="font-medium text-white text-l md:text-xl">01</h4>
+              <h4 class="text-3xl font-semibold text-white">Web Design</h4>
+              <p class="block mt-4 text-xl font-medium text-gray-200 md:text-base lg:max-w-md md:py-4">Lorem ipsum dolor
                 sit amet consectetur adipisicing elit.</p>
               <a href="#"
-                class="block uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                class="block mt-8 tracking-wide text-gray-200 uppercase duration-500 hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                 more]</a>
             </div>
             <div id="contentBox2" class="min-w-full p-4 text-center lg:text-left">
-              <h4 class="text-l md:text-xl text-white font-medium">02</h4>
-              <h4 class="text-3xl text-white font-semibold">SEO</h4>
-              <p class="block text-xl md:text-base lg:max-w-md font-medium md:py-4 text-gray-200 mt-4">Lorem ipsum dolor
+              <h4 class="font-medium text-white text-l md:text-xl">02</h4>
+              <h4 class="text-3xl font-semibold text-white">SEO</h4>
+              <p class="block mt-4 text-xl font-medium text-gray-200 md:text-base lg:max-w-md md:py-4">Lorem ipsum dolor
                 sit amet consectetur adipisicing elit.</p>
               <a href="#"
-                class="uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                class="mt-8 tracking-wide text-gray-200 uppercase duration-500 hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                 more]</a>
             </div>
             <div id="contentBox3" class="min-w-full p-4 text-center lg:text-left">
-              <h4 class="text-l md:text-xl text-white font-medium">03</h4>
-              <h4 class="text-3xl text-white font-semibold">PPC</h4>
-              <p class="block text-xl md:text-base lg:max-w-md font-medium md:py-4 text-gray-200 mt-4">Lorem ipsum dolor
+              <h4 class="font-medium text-white text-l md:text-xl">03</h4>
+              <h4 class="text-3xl font-semibold text-white">PPC</h4>
+              <p class="block mt-4 text-xl font-medium text-gray-200 md:text-base lg:max-w-md md:py-4">Lorem ipsum dolor
                 sit amet consectetur adipisicing elit.</p>
               <a href="#"
-                class="uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                class="mt-8 tracking-wide text-gray-200 uppercase duration-500 hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                 more]</a>
             </div>
             <div id="contentBox4" class="min-w-full p-4 text-center lg:text-left">
-              <h4 class="text-l md:text-xl text-white font-medium">04</h4>
-              <h4 class="text-3xl text-white font-semibold">Social Media Management</h4>
-              <p class="block text-xl md:text-base lg:max-w-md font-medium md:py-4 text-gray-200 mt-4">Lorem ipsum dolor
+              <h4 class="font-medium text-white text-l md:text-xl">04</h4>
+              <h4 class="text-3xl font-semibold text-white">Social Media Management</h4>
+              <p class="block mt-4 text-xl font-medium text-gray-200 md:text-base lg:max-w-md md:py-4">Lorem ipsum dolor
                 sit amet consectetur adipisicing elit.</p>
               <a href="#"
-                class="uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                class="mt-8 tracking-wide text-gray-200 uppercase duration-500 hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                 more]</a>
             </div>
           </div>
 
           <div class="flex justify-center gap-4 mt-4">
-            <button id="prev" class="bg-gray-800 text-white p-2">&lt;</button>
-            <button id="next" class="bg-gray-800 text-white p-2">&gt;</button>
+            <button id="prev" class="p-2 text-white bg-gray-800">&lt;</button>
+            <button id="next" class="p-2 text-white bg-gray-800">&gt;</button>
           </div>
 
         </div>
@@ -520,10 +537,10 @@
 
     <!--  -->
     <!-- <section id="ourWork">
-      <div class="container-fliud bg-white mx-auto pt-16 pb-10 px-4">
-        <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Our Work</h2>
-        <h4 class="text-center text-xl text-gray-900 font-medium">Bespoke solutions for unique challenges</h4>
-        <div id="workSlide" class="container m-auto py-8 grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-4 items-center justify-items-center">
+      <div class="px-4 pt-16 pb-10 mx-auto bg-white container-fliud">
+        <h2 class="text-4xl font-semibold text-center text-gray-900 md:text-5xl">Our Work</h2>
+        <h4 class="text-xl font-medium text-center text-gray-900">Bespoke solutions for unique challenges</h4>
+        <div id="workSlide" class="container grid items-center grid-cols-1 py-8 m-auto lg:grid lg:grid-cols-2 lg:gap-4 justify-items-center">
     
           
             <div class="work-content-box md:relative md:flex md:items-center md:overflow-hidden">
@@ -533,23 +550,23 @@
                     alt="">
                 </div>
                 <div class="absolute max-w-[275px] text-white left-12 bottom-0 flex-col">
-                  <h4 class="block my-12 text-l font-semibold">Spa Ceylon</h4>
+                  <h4 class="block my-12 font-semibold text-l">Spa Ceylon</h4>
                   <h2 class="block my-12 text-2xl font-semibold">Digital Marketing Solutions for the Ultimate Ayurvedic
                     Beauty Brand</h2>
                   <p class="block my-12">Learn how we helped Spa Ceylon quadruple monthly revenue within a span of eight
                     months.</p>
                   <a href="#"
-                    class="hidden md:block uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                    class="hidden mt-8 tracking-wide text-gray-200 uppercase duration-500 md:block hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                     more]</a>
                   <p class="block my-12">Digital Integrated Campaign | Digital Strategy Consultancy | E-commerce</p>
                 </div>
               </div>
     
               <div class="md:absolute bg-[#000a13] md:bg-white md:left-[50%] md:min-w-[50%] pr-20 md:px-8 lg:py-8 xl:16  border-solid border-[#aaadb1] border-[1px]">
-                <div class="flex items-center justify-end md:justify-start my-6">
+                <div class="flex items-center justify-end my-6 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -561,10 +578,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -576,10 +593,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -591,7 +608,7 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block mt-8 tracking-wide text-center text-gray-200 uppercase duration-500 md:hidden hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
 
@@ -602,23 +619,23 @@
                     alt="">
                 </div>
                 <div class="absolute max-w-[275px] text-white left-12 bottom-0 flex-col">
-                  <h4 class="block my-12 text-l font-semibold">Spa Ceylon</h4>
+                  <h4 class="block my-12 font-semibold text-l">Spa Ceylon</h4>
                   <h2 class="block my-12 text-2xl font-semibold">Digital Marketing Solutions for the Ultimate Ayurvedic
                     Beauty Brand</h2>
                   <p class="block my-12">Learn how we helped Spa Ceylon quadruple monthly revenue within a span of eight
                     months.</p>
                   <a href="#"
-                    class="hidden md:block uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                    class="hidden mt-8 tracking-wide text-gray-200 uppercase duration-500 md:block hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                     more]</a>
                   <p class="block my-12">Digital Integrated Campaign | Digital Strategy Consultancy | E-commerce</p>
                 </div>
               </div>
     
               <div class="md:absolute bg-[#000a13] md:bg-white md:left-[50%] md:min-w-[50%] pr-20 md:px-8 lg:py-8 xl:16  border-solid border-[#aaadb1] border-[1px]">
-                <div class="flex items-center justify-end md:justify-start my-6">
+                <div class="flex items-center justify-end my-6 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -630,10 +647,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -645,10 +662,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -660,7 +677,7 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block mt-8 tracking-wide text-center text-gray-200 uppercase duration-500 md:hidden hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
 
@@ -671,23 +688,23 @@
                     alt="">
                 </div>
                 <div class="absolute max-w-[275px] text-white left-12 bottom-0 flex-col">
-                  <h4 class="block my-12 text-l font-semibold">Spa Ceylon</h4>
+                  <h4 class="block my-12 font-semibold text-l">Spa Ceylon</h4>
                   <h2 class="block my-12 text-2xl font-semibold">Digital Marketing Solutions for the Ultimate Ayurvedic
                     Beauty Brand</h2>
                   <p class="block my-12">Learn how we helped Spa Ceylon quadruple monthly revenue within a span of eight
                     months.</p>
                   <a href="#"
-                    class="hidden md:block uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                    class="hidden mt-8 tracking-wide text-gray-200 uppercase duration-500 md:block hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                     more]</a>
                   <p class="block my-12">Digital Integrated Campaign | Digital Strategy Consultancy | E-commerce</p>
                 </div>
               </div>
     
               <div class="md:absolute bg-[#000a13] md:bg-white md:left-[50%] md:min-w-[50%] pr-20 md:px-8 lg:py-8 xl:16  border-solid border-[#aaadb1] border-[1px]">
-                <div class="flex items-center justify-end md:justify-start my-6">
+                <div class="flex items-center justify-end my-6 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -699,10 +716,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -714,10 +731,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[200%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -729,14 +746,14 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block mt-8 tracking-wide text-center text-gray-200 uppercase duration-500 md:hidden hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
 
         </div>
         <div class="flex justify-center gap-4 mt-4">
-          <button id="prevWork" class="bg-gray-800 text-white p-2">&lt;</button>
-          <button id="nextWork" class="bg-gray-800 text-white p-2">&gt;</button>
+          <button id="prevWork" class="p-2 text-white bg-gray-800">&lt;</button>
+          <button id="nextWork" class="p-2 text-white bg-gray-800">&gt;</button>
         </div>
       </div>
     </section> -->
@@ -745,37 +762,37 @@
 
     <!--  -->
     <section id="ourWork">
-      <div class="container-fliud bg-white mx-auto pt-16 pb-8 px-4">
-        <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Our Work</h2>
-        <h4 class="text-center text-xl text-gray-900 font-medium">Bespoke solutions for unique challenges</h4>
-        <div class="our-work owl-carousel owl-theme my-12">
+      <div class="px-4 pt-16 pb-8 mx-auto bg-white container-fliud">
+        <h2 class="text-4xl font-semibold text-center text-gray-900 md:text-5xl">Our Work</h2>
+        <h4 class="text-xl font-medium text-center text-gray-900">Bespoke solutions for unique challenges</h4>
+        <div class="my-12 our-work owl-carousel owl-theme">
           <div class="item">
             <div class= "work-content-box md:relative md:flex md:items-center md:overflow-hidden">
               <div class="relative flex items-center overflow-hidden">
-                <div class="md:relative right-24 hidden md:block">
+                <div class="hidden md:relative right-24 md:block">
                   <img class="hidden md:block" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/case-study-850x820-spa-ceylon.webp"
                     alt="">
-                </div><div class="md:relative right-24 block md:hidden">
+                </div><div class="block md:relative right-24 md:hidden">
                   <img class="block md:hidden" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/case-study-1-spa-ceylon-800x1200-1.webp" alt="">
                 </div>
                 <div class="absolute text-center md:text-left md:max-w-[275px] text-white md:left-12 bottom-0 flex-col">
-                  <h4 class="block my-12 text-l font-semibold">Spa Ceylon</h4>
+                  <h4 class="block my-12 font-semibold text-l">Spa Ceylon</h4>
                   <h2 class="block my-12 text-2xl font-semibold">Digital Marketing Solutions for the Ultimate Ayurvedic
                     Beauty Brand</h2>
                   <p class="block my-12">Learn how we helped Spa Ceylon quadruple monthly revenue within a span of eight
                     months.</p>
                   <a href="#"
-                    class="hidden md:block uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                    class="hidden mt-8 tracking-wide text-gray-200 uppercase duration-500 md:block hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                     more]</a>
                   <p class="block my-12">Digital Integrated Campaign | Digital Strategy Consultancy | E-commerce</p>
                 </div>
               </div>
     
               <div class="md:absolute bg-[#000a13] md:bg-white md:left-[50%] md:min-w-[50%] pr-0 md:px-8 lg:py-8 xl:16  border-solid border-[#aaadb1] border-[1px]">
-                <div class="flex items-center justify-end md:justify-start my-6">
+                <div class="flex items-center justify-end my-6 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -787,10 +804,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -802,10 +819,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -817,37 +834,37 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block text-sm font-semibold pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block pb-8 mt-8 text-sm font-semibold tracking-wide text-center text-gray-200 uppercase duration-500 md:hidden hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="work-content-box md:relative md:flex md:items-center md:overflow-hidden">
               <div class="relative flex items-center overflow-hidden">
-                <div class="md:relative right-24 hidden md:block">
+                <div class="hidden md:relative right-24 md:block">
                   <img class="hidden md:block" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/case-study-3-dilmah-850x820-1.webp"
                     alt="">
-                </div><div class="md:relative right-24 block md:hidden">
+                </div><div class="block md:relative right-24 md:hidden">
                   <img class="block md:hidden" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/case-study-3-dilmah-800x1200-1.webp" alt="">
                 </div>
                 <div class="absolute text-center md:text-left md:max-w-[275px] text-white md:left-12 bottom-0 flex-col">
-                  <h4 class="block my-12 text-l font-semibold">Spa Ceylon</h4>
+                  <h4 class="block my-12 font-semibold text-l">Spa Ceylon</h4>
                   <h2 class="block my-12 text-2xl font-semibold">Digital Marketing Solutions for the Ultimate Ayurvedic
                     Beauty Brand</h2>
                   <p class="block my-12">Learn how we helped Spa Ceylon quadruple monthly revenue within a span of eight
                     months.</p>
                   <a href="#"
-                    class="hidden md:block uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                    class="hidden mt-8 tracking-wide text-gray-200 uppercase duration-500 md:block hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                     more]</a>
                   <p class="block my-12">Digital Integrated Campaign | Digital Strategy Consultancy | E-commerce</p>
                 </div>
               </div>
     
               <div class="md:absolute bg-[#000a13] md:bg-white md:left-[50%] md:min-w-[50%] pr-0 md:px-8 lg:py-8 xl:16  border-solid border-[#aaadb1] border-[1px]">
-                <div class="flex items-center justify-end md:justify-start my-6">
+                <div class="flex items-center justify-end my-6 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -859,10 +876,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -874,10 +891,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -889,37 +906,37 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block text-sm font-semibold pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block pb-8 mt-8 text-sm font-semibold tracking-wide text-center text-gray-200 uppercase duration-500 md:hidden hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item">
             <div class="work-content-box md:relative md:flex md:items-center md:overflow-hidden">
               <div class="relative flex items-center overflow-hidden">
-                <div class="md:relative right-24 hidden md:block">
+                <div class="hidden md:relative right-24 md:block">
                   <img class="hidden md:block" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/case-study-2-fairfirst-850x820-1.webp"
                     alt="">
-                </div><div class="md:relative right-24 block md:hidden">
+                </div><div class="block md:relative right-24 md:hidden">
                   <img class="block md:hidden" src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/case-study-2-fairfirst-800x1200-1.webp" alt="">
                 </div>
                 <div class="absolute text-center md:text-left md:max-w-[275px] text-white md:left-12 bottom-0 flex-col">
-                  <h4 class="block my-12 text-l font-semibold">Spa Ceylon</h4>
+                  <h4 class="block my-12 font-semibold text-l">Spa Ceylon</h4>
                   <h2 class="block my-12 text-2xl font-semibold">Digital Marketing Solutions for the Ultimate Ayurvedic
                     Beauty Brand</h2>
                   <p class="block my-12">Learn how we helped Spa Ceylon quadruple monthly revenue within a span of eight
                     months.</p>
                   <a href="#"
-                    class="hidden md:block uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read
+                    class="hidden mt-8 tracking-wide text-gray-200 uppercase duration-500 md:block hover:text-yellow-400 sm:mb-8 lg:mt-0">[read
                     more]</a>
                   <p class="block my-12">Digital Integrated Campaign | Digital Strategy Consultancy | E-commerce</p>
                 </div>
               </div>
     
               <div class="md:absolute bg-[#000a13] md:bg-white md:left-[50%] md:min-w-[50%] pr-0 md:px-8 lg:py-8 xl:16  border-solid border-[#aaadb1] border-[1px]">
-                <div class="flex items-center justify-end md:justify-start my-6">
+                <div class="flex items-center justify-end my-6 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -931,10 +948,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -946,10 +963,10 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex items-center justify-end md:justify-start my-12">
+                <div class="flex items-center justify-end my-12 md:justify-start">
                   <div class="flex flex-col items-end">
-                    <h2 class="text-6xl text-white md:text-black font-semibold">508%</h2>
-                    <h6 class="text-sm text-white md:text-black font-semibold">Revenue</h6>
+                    <h2 class="text-6xl font-semibold text-white md:text-black">508%</h2>
+                    <h6 class="text-sm font-semibold text-white md:text-black">Revenue</h6>
                     <div class="bg-gray-300 w-[100%] md:w-full h-px my-1"></div>
                     <p class="block text-white md:text-black md:text-sm">508% increase in total revenue</p>
                   </div>
@@ -961,7 +978,7 @@
                     </svg>
                   </div>
                 </div>
-                <a href="#" class="block text-sm font-semibold pb-8 md:hidden text-center uppercase tracking-wide text-gray-200 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block pb-8 mt-8 text-sm font-semibold tracking-wide text-center text-gray-200 uppercase duration-500 md:hidden hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
@@ -972,76 +989,76 @@
 
     <!--  -->
     <!-- <section id="ourBlog">
-      <div class="container-fliud bg-white mx-auto pt-16 pb-10 px-0">
-        <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Blog</h2>
-        <h4 class="text-center text-xl text-gray-900 font-medium">Catch up on our latest and greatest!</h4>
-        <a href="#" class="block text-sm font-semibold py-4 text-center uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
-        <div class="my-10 flex">
+      <div class="px-0 pt-16 pb-10 mx-auto bg-white container-fliud">
+        <h2 class="text-4xl font-semibold text-center text-gray-900 md:text-5xl">Blog</h2>
+        <h4 class="text-xl font-medium text-center text-gray-900">Catch up on our latest and greatest!</h4>
+        <a href="#" class="block py-4 mt-8 text-sm font-semibold tracking-wide text-center text-gray-800 uppercase duration-500 hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
+        <div class="flex my-10">
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex-col">
+            <div class="flex-col p-0 m-0">
               <div class="w-96">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="pr-5 mb-3">
-                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex-col">
+            <div class="flex-col p-0 m-0">
               <div class="w-96">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="pr-5 mb-3">
-                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex-col">
+            <div class="flex-col p-0 m-0">
               <div class="w-96">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="pr-5 mb-3">
-                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex-col">
+            <div class="flex-col p-0 m-0">
               <div class="w-96">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="pr-5 mb-3">
-                <a href="#" class="block text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
@@ -1052,76 +1069,76 @@
 
     <!--  -->
     <section id="ourBlog">
-      <div class="container-fliud bg-white mx-auto py-8 px-0">
-        <h2 class="text-4xl md:text-5xl text-gray-900 font-semibold text-center">Blog</h2>
-        <h4 class="text-center text-xl text-gray-900 font-medium">Catch up on our latest and greatest!</h4>
-        <a href="#" class="block text-sm font-semibold py-4 text-center uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
-        <div class="our-blog owl-carousel owl-theme my-10 flex">
+      <div class="px-0 py-8 mx-auto bg-white container-fliud">
+        <h2 class="text-4xl font-semibold text-center text-gray-900 md:text-5xl">Blog</h2>
+        <h4 class="text-xl font-medium text-center text-gray-900">Catch up on our latest and greatest!</h4>
+        <a href="#" class="block py-4 mt-8 text-sm font-semibold tracking-wide text-center text-gray-800 uppercase duration-500 hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
+        <div class="flex my-10 our-blog owl-carousel owl-theme">
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex flex-col">
+            <div class="flex flex-col p-0 m-0">
               <div class="w-fit">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="my-2">
-                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block pr-5 mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex flex-col">
+            <div class="flex flex-col p-0 m-0">
               <div class="w-fit">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="my-2">
-                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block pr-5 mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex flex-col">
+            <div class="flex flex-col p-0 m-0">
               <div class="w-fit">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="my-2">
-                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block pr-5 mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
           <div class="item border-l-[1px] border-gray-300">
-            <div class="p-0 m-0 flex flex-col">
+            <div class="flex flex-col p-0 m-0">
               <div class="w-fit">
                 <img src="https://www.antyrasolutions.com/wp-content/uploads/2023/02/Leveraging-TikTok-as-a-Destination-Marketing-Platform-800x500-1.webp" alt="">
               </div>
-              <div class="my-8 mx-12">
+              <div class="mx-12 my-8">
                 <h4 class="font-semibold">Leveraging TikTok as a Destination Marketing Platform</h4>
               </div>
-              <div class="w-9/12 px-4 h-px bg-gray-300 m-auto"></div>
-              <div class="my-4 mx-12">
+              <div class="w-9/12 h-px px-4 m-auto bg-gray-300"></div>
+              <div class="mx-12 my-4">
                 <p class="text-sm">Announcements  •  News  •  Tech</p>
               </div>
               <div class="my-2">
-                <a href="#" class="block pr-5 text-sm font-semibold text-end uppercase tracking-wide text-gray-800 hover:text-yellow-400 duration-500 sm:mb-8 mt-8 lg:mt-0">[read more]</a>
+                <a href="#" class="block pr-5 mt-8 text-sm font-semibold tracking-wide text-gray-800 uppercase duration-500 text-end hover:text-yellow-400 sm:mb-8 lg:mt-0">[read more]</a>
               </div>
             </div>
           </div>
@@ -1135,29 +1152,29 @@
       <div class="container-fliud bg-white mx-auto pt-8 px-0 flex flex-col md:flex-row h-fit md:h-[25rem]">
         <div class="bg-[#ffef3c] text-center md:text-left md:basis-4/5 py-14 px-12 lg:px-32 flex flex-col justify-around">
           <div class="my-2 md:my-0">
-            <h2 class="text-4xl lg:text-5xl font-semibold">Have a project you like to discus?</h2>
+            <h2 class="text-4xl font-semibold lg:text-5xl">Have a project you like to discus?</h2>
           </div>
           <div class="my-2 md:my-0">
             <a class="text-sm" href="mailto:">sales@aitech.lk</a>
           </div>
           <div class="my-2 md:my-0">
-            <a class="bg-white inline-block py-5 px-8" href="#">Let's Chat</a>
+            <a class="inline-block px-8 py-5 bg-white" href="#">Let's Chat</a>
           </div>
         </div>
 
-        <div class="bg-white md:basis-3/5 mt-6 md:mt-0 flex flex-col justify-center items-center lg:items-start">
-          <div class="w-fit px-16 pb-8 flex flex-col justify-center">
-            <h2 class="text-4xl lg:text-5xl text-gray-300 font-semibold">Sri Lanka</h2>
+        <div class="flex flex-col items-center justify-center mt-6 bg-white md:basis-3/5 md:mt-0 lg:items-start">
+          <div class="flex flex-col justify-center px-16 pb-8 w-fit">
+            <h2 class="text-4xl font-semibold text-gray-300 lg:text-5xl">Sri Lanka</h2>
             <a href="tel:" class="text-sm text-center text-gray-700">+94 774 123 480</a>
           </div>
           <!-- <div class="bg-gray-300 w-[100%] md:w-[50%] h-px my-1"></div> -->
           <div class="w-fit px-16 pb-8 flex flex-col justify-center border-t-[1px] border-gray-300">
-            <h2 class="text-4xl lg:text-5xl text-gray-300 font-semibold">Sri Lanka</h2>
+            <h2 class="text-4xl font-semibold text-gray-300 lg:text-5xl">Sri Lanka</h2>
             <a href="tel:" class="text-sm text-center text-gray-700">+94 774 123 480</a>
           </div>
           <!-- <div class="bg-gray-300 w-[100%] md:w-[50%] h-px my-1"></div> -->
           <div class="w-fit px-16 pb-8 flex flex-col justify-center border-t-[1px] border-gray-300">
-            <h2 class="text-4xl lg:text-5xl text-gray-300 font-semibold">Sri Lanka</h2>
+            <h2 class="text-4xl font-semibold text-gray-300 lg:text-5xl">Sri Lanka</h2>
             <a href="tel:" class="text-sm text-center text-gray-700">+94 774 123 480</a>
           </div>
         </div>
@@ -1167,18 +1184,18 @@
 
     <!--  -->
     <footer class="bg-[#000a13] text-gray-400">
-      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div class="w-80 md:w-64 flex-shrink-0 mb-8 md:mb-0 md:mx-0 mx-auto text-center md:text-left">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
+      <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+        <div class="flex-shrink-0 mx-auto mb-8 text-center w-80 md:w-64 md:mb-0 md:mx-0 md:text-left">
+            <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start" href="#">
               <img class="w-40 mr-2" src="./assest/img/logo.png" alt="">
             </a>
           <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus odio magnam, fuga in ipsa cumque dolore ad modi, illum sequi ex, hic reprehenderit vitae rem provident sed inventore recusandae quia.</p>
         </div>
-        <div class="flex-grow flex flex-wrap md:pl-20 md-10 md:text-left text-center">
+        <div class="flex flex-wrap flex-grow text-center md:pl-20 md-10 md:text-left">
 
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
-            <nav class="list-none mb-10">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+            <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+            <nav class="mb-10 list-none">
               <li class="mb-2">
                 <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
               </li>
@@ -1194,9 +1211,9 @@
             </nav>
           </div>
 
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
-            <nav class="list-none mb-10">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+            <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+            <nav class="mb-10 list-none">
               <li class="mb-2">
                 <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
               </li>
@@ -1212,9 +1229,9 @@
             </nav>
           </div>
 
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
-            <nav class="list-none mb-10">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+            <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+            <nav class="mb-10 list-none">
               <li class="mb-2">
                 <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
               </li>
@@ -1230,20 +1247,20 @@
             </nav>
           </div>
 
-          <!-- <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
-            <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-              <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                <label class="leading-7 text-sm text-gray-400" for="">Enter Email</label>
-                <input class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" type="text">
+          <!-- <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+            <h2 class="mb-3 text-sm font-medium tracking-widest text-white title-font">SUBSCRIBE</h2>
+            <div class="flex flex-wrap items-end justify-center xl:flex-nowrap md:flex-nowrap lg:flex-wrap md:justify-start">
+              <div class="relative w-40 mr-2 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4">
+                <label class="text-sm leading-7 text-gray-400" for="">Enter Email</label>
+                <input class="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-800 border border-gray-700 rounded outline-none bg-opacity-40 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500" type="text">
               </div>
             </div>
-            <p class="text-gray-500 text-sm md:text-left text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, omnis. Molestiae, aut magni <br>brand in Sri Lanka.</p>
+            <p class="text-sm text-center text-gray-500 md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, omnis. Molestiae, aut magni <br>brand in Sri Lanka.</p>
           </div> -->
 
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">LINK TITLE</h2>
-            <nav class="list-none mb-10">
+          <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+            <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+            <nav class="mb-10 list-none">
               <li class="mb-2">
                 <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
               </li>
@@ -1261,19 +1278,19 @@
         </div>
       </div>
       <div class="bg-gray-800 bg-opacity-75">
-        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p class="text-gray-400 text-sm text-center sm:text-left">2024 Project with - <a href="" class="text-gray-500 ml-1">AITECH</a></p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-0 justify-center sm:justify-center">
-            <a href="" class="text-gray-400 ml-3">
+        <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+          <p class="text-sm text-center text-gray-400 sm:text-left">2024 Project with - <a href="" class="ml-1 text-gray-500">AITECH</a></p>
+          <span class="inline-flex justify-center mt-0 sm:ml-auto sm:mt-0 sm:justify-center">
+            <a href="" class="ml-3 text-gray-400">
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-            <a href="" class="text-gray-400 ml-3">
+            <a href="" class="ml-3 text-gray-400">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
-            <a href="" class="text-gray-400 ml-3">
+            <a href="" class="ml-3 text-gray-400">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a href="" class="text-gray-400 ml-3">
+            <a href="" class="ml-3 text-gray-400">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </span>
@@ -1285,7 +1302,9 @@
   </main>
 
 
-  <script src="./assest/js/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="./assest/js/loading.js"></script>
+  <!-- <script src="./assest/js/gsap.min.js"></script> -->
   <script src="./assest/js/homeHero.js" defer></script>
   <script src="./assest/js/homeFeatureResponsiveSlide.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
