@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI TECHNOLOGIES</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./assets/css/loading-style.css">
+  <link rel="stylesheet" href="./assets/css/digital-page.css">
+  <link rel="stylesheet" href="./assets/css/home-style.css">
+</head>
+
+<body>
+
+  <header class="fixed top-0 left-0 z-50 w-full hide">
+    <nav>
+      <a href="./index.html"><img src="./assets/img/logo.png" alt="logo" class="logo"></a>
+      <ul class="main-nav">
+        <!-- <li>
+          <a href="#">Login</a>
+        </li>
+        <li>
+          <a href="#">Sign up</a>
+        </li> -->
+        <li class="hamburger">
+          <a href="#">
+            <ion-icon name="menu-outline" class="mt-2 text-5xl" onclick="Menu(this)"></ion-icon>
+          </a>
+        </li>
+      </ul>
+
+      <ul id="mainMenuTitle"
+        class="lg:grid lg:grid-cols-4 lg:items-start lg:pl-5 z-[-1] absolute bg-gray-700 w-full left-0 opacity-0 top-[-400px] py-0 pl-0 transition-all ease-in-out duration-700 lg:duration-500 max-h-screen overflow-y-auto">
+        <!-- <ul class="md:grid md:grid-cols-4 md:items-center z-[-1] md:z-auto md:static absolute bg-gray-700 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 opacity-0 top-[-400px] transition-all ease-in duration-500"> -->
+        <li class="mx-4 mt-10 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="digital.html"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Digital</a>
+            <span class="block text-4xl text-gray-400 lg:hidden">
+              <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle1')"></ion-icon>
+            </span>
+          </div>
+          <ul id="subMenuTitle1"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Social Media Marketing</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Social Media Optimization</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Social Media Advertisement</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Lead Generation</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Google Ads</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Graphic Design</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Search Engine Optimization</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Digital Strategy</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Email Marketing</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Influencer Marketing</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Tiktok Advertising</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Content Creation</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Digital Analysis</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Web</a>
+            <span class="block text-4xl text-gray-400 lg:hidden">
+              <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle2')"></ion-icon>
+            </span>
+          </div>
+          <ul id="subMenuTitle2"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Travel And Tourism</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Corporate</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Cosmetic & Beauty</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Salon</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Sport</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Agriculture</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Development</a>
+            <span class="block text-4xl text-gray-400 lg:hidden">
+              <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle3')"></ion-icon>
+            </span>
+          </div>
+          <ul id="subMenuTitle3"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Web Application</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Mobile Application</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Studio</a>
+            <span class="block text-4xl text-gray-400 lg:hidden">
+              <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle4')"></ion-icon>
+            </span>
+          </div>
+          <ul id="subMenuTitle4"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Videography</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Photography</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Events</a>
+            <span class="block text-4xl text-gray-400 lg:hidden">
+              <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle5')"></ion-icon>
+            </span>
+          </div>
+          <ul id="subMenuTitle5"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Sanchraka Udawa</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>FHA-Maldives</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Hotel Show Colombo</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Cafe - Culinary Arts Food Expo</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Boat Show Colombo</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Lankapak</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Industries</a>
+            <span class="block text-4xl text-gray-400 lg:hidden">
+              <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle6')"></ion-icon>
+            </span>
+          </div>
+          <ul id="subMenuTitle6"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Travel</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Corporate</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Cosmetic</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Salon</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Sport</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Agriculture</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">About
+              Us</a>
+            <!-- <span class="block text-4xl text-gray-400 lg:hidden">
+                <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle7')"></ion-icon>
+              </span> -->
+          </div>
+          <ul id="subMenuTitle7"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <!-- <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li>
+              <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li>
+              <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li> -->
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Blog</a>
+            <span class="block text-4xl text-gray-400 lg:hidden">
+              <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle8')"></ion-icon>
+            </span>
+          </div>
+          <ul id="subMenuTitle8"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit</li>
+            </a>
+            <a href="" class="hover:text-[#c0c0c0] duration-500">
+              <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit</li>
+            </a>
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium text-white uppercase hover:text-[#facc15] duration-500">Contact</a>
+            <!-- <span class="block text-4xl text-gray-400 lg:hidden">
+                <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle9')"></ion-icon>
+              </span> -->
+          </div>
+          <ul id="subMenuTitle9"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <!-- <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li>
+              <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li>
+              <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li> -->
+          </ul>
+        </li>
+
+        <li class="mx-4 mt-0 lg:mt-10">
+          <div class="flex justify-between">
+            <a href="#"
+              class="lg:text-4xl sm:text-4xl text-2xl font-medium uppercase text-white hover:text-[#facc15] duration-500">Careers</a>
+            <!-- <span class="block text-4xl text-gray-400 lg:hidden">
+                <ion-icon name="add-outline" onclick="SubMenu(this, 'subMenuTitle10')"></ion-icon>
+              </span> -->
+          </div>
+          <ul id="subMenuTitle10"
+            class="mt-4 opacity-0 max-h-0 overflow-hidden pl-5 transition-all ease-in-out duration-700 lg:opacity-100 lg:max-h-[1000px] lg:overflow-auto lg:pl-0 text-gray-100">
+            <!-- <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li>
+              <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li>
+              <li>SMM</li>
+              <li>SMO</li>
+              <li>LG</li>
+              <li>GD</li>
+              <li>SEO</li> -->
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section id="main">
+    <div class="w-full h-screen overflow-hidden bg-black part-1">
+      <div class="flex items-start justify-center w-full h-screen content-part-1">
+        <div class="rotate-div flex items-center justify-center gap-[3vw] w-[200vw] h-[200vh] bg-black">
+          <div id="rowDiv1" class="row-div">
+            <div class="img-div">
+              <img src="./assets/IMGS/SEO1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/CC1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/DA1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/DS1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/EM1.jpg" alt="">
+            </div>
+          </div>
+          <div id="rowDiv2" class="row-div">
+            <div class="img-div">
+              <img src="./assets/IMGS/EM2.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/GA1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/GD1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/IM1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/SEO1.jpg" alt="">
+            </div>
+          </div>
+          <div id="rowDiv3" class="row-div">
+            <div class="img-div">
+              <img src="./assets/IMGS/SEO2.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/SMA1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/SMM1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/CC2.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/EM2.jpg" alt="">
+            </div>
+          </div>
+          <div id="rowDiv4" class="row-div">
+            <div class="img-div">
+              <img src="./assets/IMGS/CC1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/GA2.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/GD2.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/IM2.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/SEO2.jpg" alt="">
+            </div>
+          </div>
+          <div id="rowDiv5" class="row-div">
+            <div class="img-div">
+              <img src="./assets/IMGS/EM1.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/SMM2.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/GD3.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/SMM3.jpg" alt="">
+            </div>
+            <div class="img-div">
+              <img src="./assets/IMGS/CC1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="overlay-div">
+          <h1>DIGITAL</h1>
+          <div class="scroll-down">
+            <h3>SCROLL DOWN</h3>
+            <div class="scroll-p">
+              <div class="scrolling"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part-2 w-full h-screen bg-[#000a13]">
+      <div class="rounded-div-wrapper">
+        <div class="rounded-div"></div>
+      </div>
+      <div class="content-2 relative flex items-center w-full h-screen b-[#000a13] overflow-hidden">
+        <!-- <div class="text-area absolute text-white opacity-[0.2] w-full">
+          <h2 class="text-4xl font-semibold text-center md:text-5xl">The Next Revolution</h2> <br>
+          <h2>that fuel your bottum line.</h2>
+        </div>
+        <div class="text-area-hover absolute text-white left-[5%] opacity-100">
+          <h2 class="text-4xl font-semibold text-center md:text-5xl">The Next Revolution</h2> <br>
+          <h2>that fuel your bottum line.</h2>
+        </div> -->
+        <div class="text-area">
+          <h2>The Next Revolution in <span>Digital Marketing,</span></h2> <br> <h4>Starts Here.</h4>
+        </div>
+        <div class="text-area-hover">
+          <h2>The Next Revolution in <span>Digital Marketing,</span></h2> <br> <h4>Starts Here.</h4>
+        </div>
+      </div>
+    </div>
+    <div class="part-4">
+      <div class="lft-part-4">
+        <h4>How we work <br> <span class="text-[#facc15]">Process</span></h4>
+        <p class="my-5">Award winning campaigns don’t come easy. The 7-pillar framework we’ve built in-house for digital marketing will take you to the next level.</p>
+        <div class="cir-part-4">
+          <img src="./assets/IMGS/star-icon.svg" alt="">
+        </div>
+      </div>
+      <div class="rght-part-4">
+        <div class="content-rght-part-4 c-one">
+          <h1>Brand Platform</h1>
+          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
+            your revenue growth and business success - not just pretty pictures.</p>
+        </div>
+        <div class="content-rght-part-4 c-two">
+          <h1>Business Objectives</h1>
+          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
+            your revenue growth and business success - not just pretty pictures.</p>
+        </div>
+        <div class="content-rght-part-4 c-three">
+          <h1>The Foundation</h1>
+          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
+            your revenue growth and business success - not just pretty pictures.</p>
+        </div>
+        <div class="content-rght-part-4 c-four">
+          <h1>Digital Strategy</h1>
+          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
+            your revenue growth and business success - not just pretty pictures.</p>
+        </div>
+        <div class="content-rght-part-4 c-five">
+          <h1>Execution</h1>
+          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
+            your revenue growth and business success - not just pretty pictures.</p>
+        </div>
+        <div class="content-rght-part-4 c-six">
+          <h1>Performance</h1>
+          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
+            your revenue growth and business success - not just pretty pictures.</p>
+        </div>
+        <div class="content-rght-part-4 c-seven">
+          <h1>Evolution</h1>
+          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
+            your revenue growth and business success - not just pretty pictures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <footer class="bg-[#000a13] text-gray-400">
+    <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+      <div class="flex-shrink-0 mx-auto mb-8 text-center w-80 md:w-64 md:mb-0 md:mx-0 md:text-left">
+          <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start" href="#">
+            <img class="w-40 mr-2" src="./assets/img/logo.png" alt="">
+          </a>
+        <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus odio magnam, fuga in ipsa cumque dolore ad modi, illum sequi ex, hic reprehenderit vitae rem provident sed inventore recusandae quia.</p>
+      </div>
+      <div class="flex flex-wrap flex-grow text-center md:pl-20 md-10 md:text-left">
+
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+          <nav class="mb-10 list-none">
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+          <nav class="mb-10 list-none">
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+          <nav class="mb-10 list-none">
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-medium tracking-widest text-white title-font">SUBSCRIBE</h2>
+          <div class="flex flex-wrap items-end justify-center xl:flex-nowrap md:flex-nowrap lg:flex-wrap md:justify-start">
+            <div class="relative w-40 mr-2 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4">
+              <label class="text-sm leading-7 text-gray-400" for="">Enter Email</label>
+              <input class="w-full px-3 py-1 text-base leading-8 text-gray-100 transition-colors duration-200 ease-in-out bg-gray-800 border border-gray-700 rounded outline-none bg-opacity-40 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500" type="text">
+            </div>
+          </div>
+          <p class="text-sm text-center text-gray-500 md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, omnis. Molestiae, aut magni <br>brand in Sri Lanka.</p>
+        </div> -->
+
+        <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+          <h2 class="mb-3 text-sm font-semibold tracking-widest text-white title-font">LINK TITLE</h2>
+          <nav class="mb-10 list-none">
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+            <li class="mb-2">
+              <a class="text-gray-400 hover:text-white" href="#">Link 1</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75">
+      <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
+        <p class="text-sm text-center text-gray-400 sm:text-left">2024 Project with - <a href="" class="ml-1 text-gray-500">AITECH</a></p>
+        <span class="inline-flex justify-center mt-0 sm:ml-auto sm:mt-0 sm:justify-center">
+          <a href="" class="ml-3 text-gray-400">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="" class="ml-3 text-gray-400">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="" class="ml-3 text-gray-400">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="" class="ml-3 text-gray-400">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!--  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <!-- <script src="./assets/js/loading.js"></script> -->
+  <script src="./assets/js/navigation.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./assets/js/homeOwlCarousel.js"></script>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/digitalPageHero.js"></script>
+
+  <script>
+    const megaMenu = document.getElementById('mainMenuTitle');
+
+    megaMenu.addEventListener('wheel', function (e) {
+      // Prevent the page from scrolling while the wheel is active on the mega menu
+      e.preventDefault();
+      megaMenu.scrollTop += e.deltaY;
+    });
+  </script>
+
+</body>
+
+</html>
