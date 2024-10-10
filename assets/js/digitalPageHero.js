@@ -815,6 +815,17 @@ ScrollTrigger.matchMedia({
 
   // Mobile
   "(max-width: 767px)": function () {
+    let tl4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".part-4",
+        start: "50% 50%",
+        end: "300% 50%",
+        pin: true,
+        scrub: 1,
+        // markers: true,
+      },
+    });
+
     tl4.to(
         ".c-one",
         {
@@ -1077,6 +1088,17 @@ ScrollTrigger.matchMedia({
 
   // Mobile
   "(max-width: 520px)": function () {
+    let tl4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".part-4",
+        start: "50% 50%",
+        end: "300% 50%",
+        pin: true,
+        scrub: 1,
+        // markers: true,
+      },
+    });
+    
     tl4.to(
         ".c-one",
         {
