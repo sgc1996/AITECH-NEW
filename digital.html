@@ -19,10 +19,11 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
   <link rel="stylesheet" href="./assets/css/loading-style.css">
   <link rel="stylesheet" href="./assets/css/digital-page.css">
+  <link rel="stylesheet" href="./assets/css/responsive-digital-page.css">
   <link rel="stylesheet" href="./assets/css/home-style.css">
 </head>
 
-<body>
+<body class="bg-gradient-to-r from-[#000a1359] to-[#1e4d75]">
 
   <header class="fixed top-0 left-0 z-50 w-full hide">
     <nav>
@@ -445,11 +446,12 @@
         </div>
       </div>
     </div>
-    <div class="part-2 w-full h-screen bg-[#000a13]">
+    <div class="part-2 w-full h-[75vh] md:h-[45vh] lg:h-screen bg-[#000a13]">
       <div class="rounded-div-wrapper">
         <div class="rounded-div"></div>
       </div>
-      <div class="content-2 relative flex items-center w-full h-screen b-[#000a13] overflow-hidden">
+      <div
+        class="content-2 relative flex items-center w-full h-[40%] sm:h-2/5 md:h-1/2 lg:h-3/5 b-[#000a13] overflow-hidden">
         <!-- <div class="text-area absolute text-white opacity-[0.2] w-full">
           <h2 class="text-4xl font-semibold text-center md:text-5xl">The Next Revolution</h2> <br>
           <h2>that fuel your bottum line.</h2>
@@ -459,69 +461,127 @@
           <h2>that fuel your bottum line.</h2>
         </div> -->
         <div class="text-area">
-          <h2>The Next Revolution in <span>Digital Marketing,</span></h2> <br> <h4>Starts Here.</h4>
+          <h2>The Next Revolution in <span>Digital Marketing,</span></h2> <br>
+          <h4>Starts Here.</h4>
         </div>
         <div class="text-area-hover">
-          <h2>The Next Revolution in <span>Digital Marketing,</span></h2> <br> <h4>Starts Here.</h4>
+          <h2>The Next Revolution in <span>Digital Marketing,</span></h2> <br>
+          <h4>Starts Here.</h4>
+        </div>
+      </div>
+      <div class="md:h-1/2 lg:h-2/5 flex flex-wrap md:flex-row justify-around bg-[#00afc5] part-2-icon-area">
+        <div class="flex flex-col items-center justify-start my-5 sm:my-2 sm:mx-10 sm:flex-wrap md:mt-8 md:mx-5 lg:m-5 icon-box">
+          <div class="icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/Performance-Animated.svg" alt="">
+          </div>
+          <div class="text-center text-white icon-content">
+            <p>Performance<br>Focuse</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-start my-5 sm:my-2 sm:mx-10 sm:flex-wrap md:mt-8 md:mx-5 lg:m-5 icon-box">
+          <div class="icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/Data-Driven-Animated.svg" alt="">
+          </div>
+          <div class="text-center text-white icon-content">
+            <p>Data Drive</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-start my-5 sm:my-2 sm:mx-10 sm:flex-wrap md:mt-8 md:mx-5 lg:m-5 icon-box">
+          <div class="icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/Multi-Industry-Animated.svg" alt="">
+          </div>
+          <div class="text-center text-white icon-content">
+            <p>Multi-Industry Expertise</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-start my-5 sm:my-2 sm:mx-10 sm:flex-wrap md:mt-8 md:mx-5 lg:m-5 icon-box">
+          <div class="icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/360approach-Aniamated.svg" alt="">
+          </div>
+          <div class="text-center text-white icon-content">
+            <p>Holistic<br>Approach</p>
+          </div>
         </div>
       </div>
     </div>
     <div class="part-4">
       <div class="lft-part-4">
         <h4>How we work <br> <span class="text-[#facc15]">Process</span></h4>
-        <p class="my-5">Award winning campaigns don’t come easy. The 7-pillar framework we’ve built in-house for digital marketing will take you to the next level.</p>
+        <p class="my-5">Award winning campaigns don’t come easy. The 7-pillar framework we’ve built in-house for digital
+          marketing will take you to the next level.</p>
         <div class="cir-part-4">
-          <img src="./assets/IMGS/star-icon.svg" alt="">
+          <img class="h-32 sm:h-36 md:h-20" src="./assets/IMGS/star-icon.svg" alt="">
         </div>
       </div>
       <div class="rght-part-4">
         <div class="content-rght-part-4 c-one">
           <h1>Brand Platform</h1>
-          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
-            your revenue growth and business success - not just pretty pictures.</p>
+          <div class="part-4-icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/work-process/digital-icons-brandplatform.svg" alt="">
+          </div>
         </div>
         <div class="content-rght-part-4 c-two">
           <h1>Business Objectives</h1>
-          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
-            your revenue growth and business success - not just pretty pictures.</p>
+          <div class="part-4-icon">
+            <img  class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/work-process/digital-icons-businessobjectives.svg" alt="">
+          </div>
         </div>
         <div class="content-rght-part-4 c-three">
           <h1>The Foundation</h1>
-          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
-            your revenue growth and business success - not just pretty pictures.</p>
+          <div class="part-4-icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/work-process/digital-icons-thefoundation.svg" alt="">
+          </div>
         </div>
         <div class="content-rght-part-4 c-four">
           <h1>Digital Strategy</h1>
-          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
-            your revenue growth and business success - not just pretty pictures.</p>
+          <div class="part-4-icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/work-process/digital-icons-digitalstrategy.svg" alt="">
+          </div>
         </div>
         <div class="content-rght-part-4 c-five">
           <h1>Execution</h1>
-          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
-            your revenue growth and business success - not just pretty pictures.</p>
+          <div class="part-4-icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/work-process/digital-icons-digitalstrategy.svg" alt="">
+          </div>
         </div>
         <div class="content-rght-part-4 c-six">
           <h1>Performance</h1>
-          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
-            your revenue growth and business success - not just pretty pictures.</p>
+          <div class="part-4-icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/work-process/digital-icons-execution.svg" alt="">
+          </div>
         </div>
         <div class="content-rght-part-4 c-seven">
           <h1>Evolution</h1>
-          <p>Expect a team that looks at problems holistically. A team that designs solutions directly contributing to
-            your revenue growth and business success - not just pretty pictures.</p>
+          <div class="part-4-icon">
+            <img class="h-32 sm:h-36 md:h-28" src="./assets/img/digital-page/work-process/digital-icons-evolution.svg" alt="">
+          </div>
         </div>
+      </div>
+    </div>
+    <div class="part-5">
+      <p>In Summer</p>
+      <div class="part-5-text-area">
+        <h2>A dedicated team at</h2> <br>
+        <h4>your disposal.</h4>
+      </div>
+      <div class="part-5-text-area-hover">
+        <h2>A dedicated team at</h2> <br>
+        <h4>your disposal.</h4>
       </div>
     </div>
   </section>
 
   <!--  -->
   <footer class="bg-[#000a13] text-gray-400">
-    <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+    <div
+      class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
       <div class="flex-shrink-0 mx-auto mb-8 text-center w-80 md:w-64 md:mb-0 md:mx-0 md:text-left">
-          <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start" href="#">
-            <img class="w-40 mr-2" src="./assets/img/logo.png" alt="">
-          </a>
-        <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus odio magnam, fuga in ipsa cumque dolore ad modi, illum sequi ex, hic reprehenderit vitae rem provident sed inventore recusandae quia.</p>
+        <a class="flex items-center justify-center font-medium text-gray-900 title-font md:justify-start" href="#">
+          <img class="w-40 mr-2" src="./assets/img/logo.png" alt="">
+        </a>
+        <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus odio
+          magnam, fuga in ipsa cumque dolore ad modi, illum sequi ex, hic reprehenderit vitae rem provident sed
+          inventore recusandae quia.</p>
       </div>
       <div class="flex flex-wrap flex-grow text-center md:pl-20 md-10 md:text-left">
 
@@ -611,7 +671,8 @@
     </div>
     <div class="bg-gray-800 bg-opacity-75">
       <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto sm:flex-row">
-        <p class="text-sm text-center text-gray-400 sm:text-left">2024 Project with - <a href="" class="ml-1 text-gray-500">AITECH</a></p>
+        <p class="text-sm text-center text-gray-400 sm:text-left">2024 Project with - <a href=""
+            class="ml-1 text-gray-500">AITECH</a></p>
         <span class="inline-flex justify-center mt-0 sm:ml-auto sm:mt-0 sm:justify-center">
           <a href="" class="ml-3 text-gray-400">
             <ion-icon name="logo-linkedin"></ion-icon>
