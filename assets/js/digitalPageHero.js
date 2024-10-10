@@ -1327,7 +1327,6 @@ ScrollTrigger.matchMedia({
 });
 
 
-
 // part-5
 let tl5 = gsap.timeline({
   scrollTrigger: {

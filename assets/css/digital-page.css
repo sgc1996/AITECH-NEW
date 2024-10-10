@@ -215,7 +215,7 @@ body {
 }
 
 .lft-part-4 h4 {
-  font-size: 4vw;
+  font-size: 5vw;
   line-height: 1em;
 }
 
@@ -272,7 +272,7 @@ body {
 }
 
 .part-5 p {
-  font-size: 2.5vw;
+  font-size: 3vw;
   font-weight: 600;
   opacity: 0.5;
   margin-top: 10vh;
@@ -283,7 +283,7 @@ body {
   color: #000000;
   opacity: 0.2;
   left: 30%;
-  top: 30%;
+  top: 25%;
   width: 100%;
 }
 
@@ -291,7 +291,7 @@ body {
   position: absolute;
   color: #000000;
   left: 30%;
-  top: 30%;
+  top: 25%;
   opacity: 1;
 }
 
