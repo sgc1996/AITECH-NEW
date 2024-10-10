@@ -264,23 +264,21 @@ tl3.to(".content-2 .text-area-hover h4", {
 //     rotate: 1440
 // }, 'sct-9')
 
-
+let tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".part-4",
+    start: "50% 50%",
+    end: "300% 50%",
+    pin: true,
+    scrub: 1,
+    // markers: true,
+  },
+});
 
 // Set up different breakpoints using GSAP matchMedia
 ScrollTrigger.matchMedia({
   // Desktop
   "(min-width: 1025px)": function () {
-    let tl4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".part-4",
-        start: "50% 50%",
-        end: "300% 50%",
-        pin: true,
-        scrub: 1,
-        // markers: true,
-      },
-    });
-
     tl4.to(
       ".c-one",
       {
@@ -543,16 +541,6 @@ ScrollTrigger.matchMedia({
 
   // Tablet
   "(min-width: 768px) and (max-width: 1024px)": function () {
-    let tl4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".part-4",
-        start: "50% 50%",
-        end: "300% 50%",
-        pin: true,
-        scrub: 1,
-        // markers: true,
-      },
-    });
     tl4.to(
         ".c-one",
         {
@@ -815,17 +803,6 @@ ScrollTrigger.matchMedia({
 
   // Mobile
   "(max-width: 767px)": function () {
-    let tl4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".part-4",
-        start: "50% 50%",
-        end: "300% 50%",
-        pin: true,
-        scrub: 1,
-        // markers: true,
-      },
-    });
-
     tl4.to(
         ".c-one",
         {
@@ -1088,17 +1065,6 @@ ScrollTrigger.matchMedia({
 
   // Mobile
   "(max-width: 520px)": function () {
-    let tl4 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".part-4",
-        start: "50% 50%",
-        end: "300% 50%",
-        pin: true,
-        scrub: 1,
-        // markers: true,
-      },
-    });
-    
     tl4.to(
         ".c-one",
         {
