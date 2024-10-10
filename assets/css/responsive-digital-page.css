@@ -67,7 +67,6 @@
     }
 
     .lft-part-4 h4 {
-      font-size: 7vw;
       line-height: 1.1em;
       text-align: center;
     }
@@ -111,6 +110,25 @@
       width: 75%;
       color: #cacaca;
     }
+
+    /* Part-5 */
+    .part-5-text-area {
+      top: 17%;
+    }
+
+    .part-5-text-area-hover {
+      top: 17%;
+    }
+    
+    .part-5-text-area h2,
+    .part-5-text-area-hover h2 {
+      line-height: 0.9em;
+    }
+    
+    .part-5-text-area h4,
+    .part-5-text-area-hover h4 {
+      line-height: 0.9em;
+    }
   }
   
   @media only screen and (max-width: 540px) {
@@ -145,7 +163,6 @@
     }
 
     .lft-part-4 h4 {
-      font-size: 7vw;
       line-height: inherit;
       text-align: center;
     }
@@ -175,6 +192,25 @@
     .content-rght-part-4 h1 {
       font-size: 6vw;
       color: #e7e7e7;
+    }
+
+    /* Part-5 */
+    .part-5-text-area {
+      top: 17%;
+    }
+
+    .part-5-text-area-hover {
+      top: 17%;
+    }
+    
+    .part-5-text-area h2,
+    .part-5-text-area-hover h2 {
+      line-height: 0.9em;
+    }
+    
+    .part-5-text-area h4,
+    .part-5-text-area-hover h4 {
+      line-height: 0.9em;
     }
   }
   
@@ -224,7 +260,6 @@
     }
 
     .lft-part-4 h4 {
-      font-size: 7vw;
       line-height: inherit;
       text-align: center;
     }
@@ -255,5 +290,24 @@
     .content-rght-part-4 h1 {
       font-size: 6vw;
       color: #e7e7e7;
+    }
+
+    /* Part-5 */
+    .part-5-text-area {
+      top: 17%;
+    }
+
+    .part-5-text-area-hover {
+      top: 17%;
+    }
+    
+    .part-5-text-area h2,
+    .part-5-text-area-hover h2 {
+      line-height: 0.9em;
+    }
+    
+    .part-5-text-area h4,
+    .part-5-text-area-hover h4 {
+      line-height: 0.9em;
     }
   }
