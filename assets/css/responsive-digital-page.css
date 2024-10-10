@@ -1,0 +1,259 @@
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+    /* Part-1 */
+    .img-div {
+      width: 55vw;
+      height: calc(100% / 8);
+      /* border-radius: 10px;
+          overflow: hidden; */
+    }
+  
+    .row-div {
+      grid-row-gap: 1em;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+    }
+  
+    .img-div img {
+      max-width: fit-content;
+    }
+  
+    .overlay-div h1 {
+      font-size: 3.5rem;
+      line-height: 1.1;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* Part-1 */
+    .img-div {
+      width: 70vw;
+      height: calc(100% / 6);
+      /* border-radius: 10px;
+          overflow: hidden; */
+    }
+  
+    .row-div {
+      grid-row-gap: 1em;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+    }
+  
+    .img-div img {
+      max-width: fit-content;
+    }
+  
+    .overlay-div h1 {
+      font-size: 3.5rem;
+      line-height: 1.1;
+    }
+  
+    /* Part-4 */
+    .part-4 {
+      flex-direction: column;
+      margin-top: 0%;
+      overflow: hidden;
+    }
+  
+    .lft-part-4 {
+      align-items: center;
+      padding-left: 0vw;
+      width: 100%;
+      height: 50%;
+      margin-top: 20%;
+    }
+
+    .lft-part-4 h4 {
+      font-size: 7vw;
+      line-height: 1.1em;
+      text-align: center;
+    }
+
+    .lft-part-4 p {
+      text-align: center;
+      width: 75%;
+      font-size: large;
+    }
+
+    .cir-part-4 {
+      display: none;
+    }
+  
+    .rght-part-4 {
+      align-items: center;
+      gap: 20vh;
+      width: 100%;
+      height: 200%;
+      margin-top: 20%;
+      padding-left: 0vw;
+    }
+
+    .content-rght-part-4 {
+      gap: 3vh;
+      opacity: 0;
+      min-height: 30vh;
+      width: 60vw;
+      border-radius: 10px;
+      box-shadow: 2px 3px 14px 0px rgba(0, 0, 0, 0.17);
+    }
+  
+    .content-rght-part-4 h1 {
+      font-size: 4vw;
+      color: #e7e7e7;
+    }
+    
+    .content-rght-part-4 p {
+      font-size: 3vw;
+      text-align: center;
+      width: 75%;
+      color: #cacaca;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    /* Part-1 */
+    .img-div {
+      width: 60vw;
+      height: calc(100% / 8);
+      /* border-radius: 10px;
+          overflow: hidden; */
+    }
+  
+    .row-div {
+      grid-row-gap: 1em;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+    }
+  
+    .img-div img {
+      max-width: fit-content;
+    }
+  
+    .overlay-div h1 {
+      font-size: 3.3rem;
+    }
+
+     /* Part-4 */
+     .lft-part-4 {
+      margin-top: 30%;
+      align-items: center;
+      padding-left: 0;
+    }
+
+    .lft-part-4 h4 {
+      font-size: 7vw;
+      line-height: inherit;
+      text-align: center;
+    }
+
+    .lft-part-4 p {
+      text-align: center;
+    }
+
+    .cir-part-4 {
+      display: none;
+    }
+  
+    .rght-part-4 {
+      align-items: center;
+      gap: 20vh;
+      width: 100%;
+      height: 200%;
+      margin-top: 20%;
+      padding-left: 0vw;
+    }
+  
+    .content-rght-part-4 {
+      min-height: 40vh;
+      width: 80vw;
+    }
+  
+    .content-rght-part-4 h1 {
+      font-size: 6vw;
+      color: #e7e7e7;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 420px) {
+    /* Part-1 */
+    .img-div {
+      width: 85vw;
+      height: calc(100% / 8);
+      /* border-radius: 10px;
+          overflow: hidden; */
+    }
+  
+    .row-div {
+      grid-row-gap: 1em;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+    }
+  
+    .img-div img {
+      max-width: fit-content;
+    }
+  
+    #rowDiv2 {
+      margin-top: -7%;
+    }
+  
+    #rowDiv3 {
+      margin-top: -10%;
+    }
+  
+    #rowDiv4 {
+      margin-top: -13%;
+    }
+  
+    #rowDiv5 {
+      margin-top: -14%;
+    }
+
+    /* Part-4 */
+    .lft-part-4 {
+      margin-top: 45%;
+      align-items: center;
+      padding-left: 0;
+      line-height: normal;
+    }
+
+    .lft-part-4 h4 {
+      font-size: 7vw;
+      line-height: inherit;
+      text-align: center;
+    }
+
+    .lft-part-4 p {
+      text-align: center;
+      width: 90%;
+    }
+
+    .cir-part-4 {
+      display: none;
+    }
+  
+    .rght-part-4 {
+      align-items: center;
+      gap: 20vh;
+      width: 100%;
+      height: 200%;
+      margin-top: 20%;
+      padding-left: 0vw;
+    }
+  
+    .content-rght-part-4 {
+      min-height: 40vh;
+      width: 80vw;
+    }
+  
+    .content-rght-part-4 h1 {
+      font-size: 6vw;
+      color: #e7e7e7;
+    }
+  }
