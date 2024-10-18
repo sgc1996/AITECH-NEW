@@ -1327,22 +1327,21 @@ ScrollTrigger.matchMedia({
 });
 
 
-// part-5
-let tl5 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".part-5",
-    start: "20% 50%",
-    end: "100% 50%",
-    // markes: true,
-    scrub: 1,
-  },
-});
+// part-6
+// let tl5 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".part-6",
+//     start: "20% 50%",
+//     end: "100% 50%",
+//     scrub: 1,
+//   },
+// });
 
-tl5.to(".part-5 .part-5-text-area-hover h2", {
-  width: "100%",
-});
+// tl5.to(".part-6 .part-6-text-area-hover h2", {
+//   width: "100%",
+// });
 
-tl5.to(".part-5 .part-5-text-area-hover h4", {
-  delay: -0.5,
-  width: "100%",
-});
+// tl5.to(".part-6 .part-6-text-area-hover h4", {
+//   delay: -0.5,
+//   width: "100%",
+// });
